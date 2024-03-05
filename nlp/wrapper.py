@@ -40,7 +40,7 @@ class Wrapper:
     early_stopping_kwargs: Dict[str, Any] = field(
         default_factory=lambda: dict(
             patience=3,
-            invert=True,
+            invert=False,
         )
     )
 
