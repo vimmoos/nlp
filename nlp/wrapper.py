@@ -71,18 +71,13 @@ class Wrapper:
     tokenizer_cls: object = field(default_factory=lambda: AutoTokenizer)
 
     # key words arguments given to the init of the tokenizer class
-    tokenizer_kwargs: Dict[str, Any] = field(
-        default_factory=lambda: dict(
-            max_length=256,
-        )
-    )
+    tokenizer_kwargs: Dict[str, Any] = field(default_factory=lambda: dict())
     # key words arguments passed at every call of the tokenizer encode
     tokenizer_call_args: Dict[str, Any] = field(
         default_factory=lambda: dict(
             return_tensors="pt",
-            padding=True,
+            padding="max_length",
             truncation=True,
-            max_length=256,
         )
     )
     # key words arguments passed at every call of the tokenizer decode
@@ -98,18 +93,14 @@ class Wrapper:
     model_cls: object = field(default_factory=lambda: AutoModelForSeq2SeqLM)
 
     # key words arguments given to the init of the model class
-    model_kwargs: Dict[str, Any] = field(
-        default_factory=lambda: dict(
-            max_length=256,
-        )
-    )
+    model_kwargs: Dict[str, Any] = field(default_factory=lambda: dict())
 
     # Optimizer class
     optimizer_cls: object = field(default_factory=lambda: th.optim.AdamW)
     # key words arguments given to the init of the optimizer class
     optimizer_kwargs: Dict[str, Any] = field(
         default_factory=lambda: dict(
-            lr=0.0001,
+            lr=1e-3,
         )
     )
 
@@ -143,10 +134,10 @@ class Wrapper:
 
         self.peft_config = self.peft_config_cls(**self.peft_config_kwargs)
 
-        self.model = self.model_cls.from_pretrained(
+        self._model = self.model_cls.from_pretrained(
             self.model_name, **self.model_kwargs
         )
-        self.model = get_peft_model(self.model, self.peft_config)
+        self.model = get_peft_model(self._model, self.peft_config)
         self.model.to(self.device)
 
         self.model.print_trainable_parameters()
@@ -210,7 +201,7 @@ class Wrapper:
                     input_ids=batch["input_ids"].to(self.device)
                 )
                 pred_text.extend([self.decode(out) for out in out_put])
-                target_text.extend(list(batch["labels"]))
+                target_text.extend(list([self.decode(lab) for lab in batch["labels"]]))
 
         out_put = self.eval_metrics(pred_text, target_text)
         self.logger.log(out_put)
@@ -242,7 +233,7 @@ class Wrapper:
             self.lr_scheduler.step()
             self.logger.log({"train/lr": self.lr_scheduler.get_last_lr()})
 
-            if epoch > 1 and epoch % self.val_epoch == 0:
+            if epoch % self.val_epoch == 0:
                 _, stop = self.evaluate(val_loader)
                 if stop:
                     return
