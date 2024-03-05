@@ -11,6 +11,19 @@ Create a new virtual env and install all the needed requirements with
 + `wrapper` -> main wrapper class that performs generic training and evaluation
 + `__main__` -> main script
 
+# WIP main
+General main structure is :
+
++ load the data (main function `load_lang_data` from `data.py`)
++ create the model wrapper (main function `Wrapper` from `wrapper.py`)
++ process data  (main function `process_dataset` from `data.py`)
++ create dataloaders (main function `get_dataloader` from `data.py`)
++ run the `Wrapper.train`  function
++ run the `Wrapper.evaluate`  function
++ save model (**TODO**)
+
+**NOTE** all the function have quite some parameters with sensible defaults. Theoretically speaking you should be able to run eveything with the defaults but you might want to change something so please look into the parameters. In the future i plan to write a dataclass that incorporates all the parameters in one place. But for now there is not if you want you need to do it manually.
+
 # Gen Data for Relatedness
 Run the following command to generate all data
 `python -m nlp.gen_data -l all`
