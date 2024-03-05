@@ -10,25 +10,24 @@ INFO = """
 The version indicate the commit from the git repo:
 https://github.com/sigmorphon/2023InflectionST
 """
+
 LANGS = ["dan", "deu", "eng", "ita", "tur"]
 
+MODE_NAMIG = {
+    "train": ".trn",
+    "test": ".tst",
+    "val": ".dev",
+}
 
-def read_lang(
-    lang,
-    version="e7f1b32",
-    base_url="https://github.com/sigmorphon/2023InflectionST/tree/",
-):
+
+def read_lang(lang: str, version: str, base_url: str):
     base_file_name = base_url + version + "/part1/data/" + lang
-    data_file = {
-        "train": base_file_name + ".trn",
-        "test": base_file_name + ".tst",
-        "val": base_file_name + ".dev",
-    }
+    data_file = {k: base_file_name + v for k, v in MODE_NAMIG.items()}
     dataset = load_dataset("text", data_files=data_file)
     return dataset, version
 
 
-def extract_process(dataset, version):
+def extract_process(dataset: dict, version: str):
     return {
         mode: {
             "data": [
@@ -47,19 +46,14 @@ def extract_process(dataset, version):
     }
 
 
-def dump(data, lang, base_path=Path("datasets")):
+def dump(data: dict, lang: str, base_path: Path):
     base_path.mkdir(exist_ok=True, parents=True)
     for mode, val in data.items():
         with gzip.open(base_path / f"{lang}_{mode}.json.gz", "wt") as f:
             json.dump(val, f)
 
 
-def pre_proc_data(
-    lang,
-    version="e7f1b32",
-    base_url="https://github.com/sigmorphon/2023InflectionST/tree/",
-    base_path=Path("datasets"),
-):
+def pre_proc_data(lang: str, version: str, base_url: str, base_path: str):
     if isinstance(base_path, str):
         base_path = Path(base_path)
     raw = read_lang(lang, version, base_url)
