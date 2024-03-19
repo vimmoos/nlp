@@ -39,3 +39,6 @@ def chr_f(pred: str, target: str, beta: float) -> float:
         match_total += block[2]
     p, r = match_total/len(pred), match_total/len(target)
     return (1 + beta*beta) * (p*r)/(beta*beta*p+r)
+
+def accuracy(pred: str, target: str) -> float:
+    return float(pred == target)
