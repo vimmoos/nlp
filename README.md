@@ -24,8 +24,7 @@
 
 ## Getting Started
 
-1. Prepare Dataset
-
+**1. Prepare Dataset**
    * **Use `gen_data`:** For supported datasets, use the following command to download and preprocess data:
 
       ```bash
