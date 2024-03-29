@@ -51,6 +51,17 @@ def run_baseline(conf: HyperRelatedness):
     wmodel.save_model([lang], name_suffix)
 
 
+def train_model(conf, wrapper):
+    for lang in conf.train_languages:
+        dataset = data.load_data(lang, wrapper.tokenizer)
+        wrapper.train(
+            dataset["train"],
+            dataset["val"],
+            log_prefix=lang + "_",
+        )
+    wrapper.save_model(conf.train_languages, "BASELINE")
+
+
 def run_relatedness(conf: HyperRelatedness):
     """Trains the model initially on train_languages and then performs zero-shot evaluation
     on test languages. It then incrementally fine-tunes on samples from test language
@@ -59,30 +70,25 @@ def run_relatedness(conf: HyperRelatedness):
 
     # Create a Wrapper object
     wmodel = make_wrapper(conf)
-    # Load Datasets
+
+    base_path = Path("models") / wmodel.get_save_path(
+        conf.train_languages, "BASELINE"
+    )
+    if not base_path.is_dir():
+        train_model(conf, wrapper)
+
+    # YEs or No ?
+    wmodel.epoch = 1
+
+    wmodel.load_model(conf.train_languages, "BASELINE")
+
     datasets = {
-        lang: data.load_data(lang, wmodel.tokenizer)
-        for lang in conf.train_languages + conf.test_languages
+        lang: data.load_data(lang, wrapper.tokenizer)
+        for lang in conf.test_languages
     }
-
-    # # Initial Training on train_languages
-    # for lang in conf.train_languages:
-    #     wmodel.train(
-    #         datasets[lang]["train"],
-    #         datasets[lang]["val"],
-    #         log_prefix=lang + "_",
-    #     )
-    #     # Optionally save the model after training on all train_languages
-
-    # print("done Training")
-    # wmodel.save_model(conf.train_languages, "PRETRAINED")
-
-    # wmodel.epoch = 1
-    wmodel.load_model(conf.train_languages, "PRETRAINED")
     # Zero-Shot Evaluation and Incremental Fine-Tuning
     sample_sizes = [0, 5, 50, 200]  # Sample sizes for fine-tuning
     for lang in conf.test_languages:
-        print("zero shot")
         # Zero-shot
         wmodel.evaluate(
             datasets[lang]["test"],
@@ -93,13 +99,12 @@ def run_relatedness(conf: HyperRelatedness):
 
         # Fine-tuning with Increasing Sample Sizes
         for sample_size in sample_sizes[1:]:
-            print(f"finetunning {sample_size}")
             log_prefix = f"{lang}_sample_{sample_size}"
 
             # Reload the initial model (trained on train_languages)
-            wmodel.load_model(conf.train_languages, "PRETRAINED")
+            wmodel.load_model(conf.train_languages, "BASELINE")
 
-            # Sample dataset (implement sampling logic for your datasets)
+            # Sample dataset
             sampled_dataset = data.sample_dataset(
                 datasets[lang]["train"], sample_size, seed=conf.seed
             )
