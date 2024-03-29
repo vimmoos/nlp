@@ -1,6 +1,6 @@
 from nlp import wrapper, data, metric
 from functools import partial
-from transformers import default_data_collator, get_linear_schedule_with_warmup
+from transformers import get_linear_schedule_with_warmup
 
 _dataset = data.load_lang_data("ita")
 
@@ -8,8 +8,10 @@ wmodel = wrapper.Wrapper(
     "google/byt5-small",
     logger=wrapper.Print_Logger,
     val_epoch=1,
-    lr_scheduler_cls=get_linear_schedule_with_warmup,
-    lr_scheduler_kwargs=dict(num_warmup_steps=0, num_training_steps=3),
+    epoch=100,
+    val_metrics=[metric.chr_f, metric.hamming_dist, metric.similarity],
+    # lr_scheduler_cls=get_linear_schedule_with_warmup,
+    # lr_scheduler_kwargs=dict(num_warmup_steps=0, num_training_steps=3),
 )
 
 # Note we do this because the training data needs a special treatment:

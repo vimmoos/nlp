@@ -151,23 +151,16 @@ class Wrapper:
 
         self.early_stop = EarlyStopping(**self.early_stopping_kwargs)
 
-    def tok(self, text: str):
-        """Encode a given text.
-        It automatically sends its to the default device.
-        returns only the "input_ids" of the encoded text
-        """
-        return self.tokenizer(
-            text,
-            **self.tokenizer_call_args,
-        )["input_ids"].to(
-            self.device,
-        )
-
     def decode(self, output: th.Tensor):
         """Decode a given tensor."""
         return self.tokenizer.decode(output, **self.decoder_call_args)
 
-    def eval_metrics(self, pred: List[str], target: List[str]):
+    def eval_metrics(
+        self,
+        pred: List[str],
+        target: List[str],
+        log_prefix: str = "val",
+    ):
         """Given some prediction and target calculates
         the mean for each metric.
         """
@@ -178,7 +171,7 @@ class Wrapper:
             ]
         )
         return {
-            f"val/{m.__name__}": metrics[:, i].mean()
+            f"{log_prefix}/{m.__name__}": metrics[:, i].mean()
             for i, m in enumerate(self.val_metrics)
         }
 
@@ -186,6 +179,8 @@ class Wrapper:
         self,
         test_loader,
         save_path: Optional[Union[str, Path]] = None,
+        log_prefix: str = "val",
+        val: bool = False,
     ):
         """Performs an evaluation step.
         Takes a dataloader and an optional save_path.
@@ -203,18 +198,20 @@ class Wrapper:
                 pred_text.extend([self.decode(out) for out in out_put])
                 target_text.extend(list([self.decode(lab) for lab in batch["labels"]]))
 
-        out_put = self.eval_metrics(pred_text, target_text)
+        out_put = self.eval_metrics(pred_text, target_text, log_prefix)
         self.logger.log(out_put)
         stop: bool = False
-        if self.early_stopping:
-            stop = self.early_stop(out_put[f"val/{self.val_metrics[0].__name__}"])
+        if self.early_stopping and val:
+            stop = self.early_stop(
+                out_put[f"{log_prefix}/{self.val_metrics[0].__name__}"]
+            )
 
         if save_path is not None:
             with open(save_path, "w", encoding="utf-8") as f:
                 f.write("\n".join(pred_text))
         return out_put, stop
 
-    def train(self, train_loader, val_loader):
+    def train(self, train_loader, val_loader, log_prefix=""):
         """Performs training on the model.
 
         Take two dataloader one for the training and one for the validation.
@@ -229,11 +226,14 @@ class Wrapper:
                 loss.backward()
                 self.optimizer.step()
                 self.optimizer.zero_grad()
-                self.logger.log({"train/loss": loss.detach().item()})
+                self.logger.log({f"train/{log_prefix}loss": loss.detach().item()})
             self.lr_scheduler.step()
-            self.logger.log({"train/lr": self.lr_scheduler.get_last_lr()})
+            self.logger.log({f"train/{log_prefix}lr": self.lr_scheduler.get_last_lr()})
 
             if epoch % self.val_epoch == 0:
-                _, stop = self.evaluate(val_loader)
+                _, stop = self.evaluate(
+                    val_loader, val=True, log_prefix=f"{log_prefix}val"
+                )
                 if stop:
+                    self.logger.log({f"train_{log_prefix}_stop": epoch})
                     return

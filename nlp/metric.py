@@ -1,6 +1,7 @@
 from scipy.spatial.distance import hamming
 from difflib import SequenceMatcher
 from typing import Tuple
+import evaluate
 
 
 ## Some base metrics that can be used for text comparison
@@ -31,11 +32,30 @@ def similarity(pred: str, target: str) -> float:
     return SequenceMatcher(None, pred, target).ratio()
 
 
-def chr_f(pred: str, target: str, beta: float) -> float:
+def chr_f(pred: str, target: str, beta: float = 2) -> float:
     """From: Maja Popovic(2015)."""
     blocks = SequenceMatcher(None, pred, target).get_matching_blocks()
     match_total = 0
     for block in blocks:
         match_total += block[2]
-    p, r = match_total/len(pred), match_total/len(target)
-    return (1 + beta*beta) * (p*r)/(beta*beta*p+r)
+    p, r = match_total / len(pred), match_total / len(target)
+
+    # Be carefull division by 0!
+    # I guess 1 but not sure pls look into this
+    if p + r == 0:
+        return 1.0
+    return (1 + beta * beta) * (p * r) / (beta * beta * p + r)
+
+
+def create_chrf(**kwargs):
+    """
+    https://huggingface.co/spaces/evaluate-metric/chrf/blob/main/README.md
+    """
+    fun = evaluate.load("chrf")
+
+    def tr_chrf(pred: str, target: str) -> float:
+        nonlocal fun, kwargs
+        res = fun.compute(predictions=[pred], references=[[target]], **kwargs)
+        return res["score"]
+
+    return tr_chrf
