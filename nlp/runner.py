@@ -1,5 +1,5 @@
 from nlp.hyper import HyperRelatedness
-from nlp import wrapper, data, metric
+from nlp import wrapper, data
 from peft import TaskType
 from pathlib import Path
 

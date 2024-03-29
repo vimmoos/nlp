@@ -20,7 +20,7 @@ General main structure is :
 + create dataloaders (main function `get_dataloader` from `data.py`)
 + run the `Wrapper.train`  function
 + run the `Wrapper.evaluate`  function
-+ save model (**TODO**)
++ save model
 
 **NOTE** all the function have quite some parameters with sensible defaults. Theoretically speaking you should be able to run eveything with the defaults but you might want to change something so please look into the parameters. In the future i plan to write a dataclass that incorporates all the parameters in one place. But for now there is not if you want you need to do it manually.
 
@@ -31,8 +31,12 @@ To see all the options please use the help with
 `python -m nlp.gen_data -h`
 
 
+# Running Baselines
+Run the following command to get the available options for the baseline
+`python -m nlp baseline --help`
+Then run choice a set of options and run the program for example:
+`python -m nlp baseline --logger print --early_patience 5 --val_epoch 2 --max_epoch 1 --lang spa`
+
+
 # TODO
 + More documentation and comments
-+ Add chrf in the metrics
-+ Add an hyperparameters dataclass for experiments
-+ Add argument parser for main
