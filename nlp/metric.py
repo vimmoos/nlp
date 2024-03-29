@@ -38,12 +38,13 @@ def chr_f(pred: str, target: str, beta: float = 2) -> float:
     match_total = 0
     for block in blocks:
         match_total += block[2]
+    # Be carefull division by 0!
     p, r = match_total / len(pred), match_total / len(target)
 
     # Be carefull division by 0!
     # I guess 1 but not sure pls look into this
-    if p + r == 0:
-        return 1.0
+    # if p + r == 0:
+    #     return 1.0
     return (1 + beta * beta) * (p * r) / (beta * beta * p + r)
 
 
