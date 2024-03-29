@@ -1,6 +1,6 @@
-**# NLP Project**
+# NLP Project
 
-**## Installation**
+## Installation
 
 1. **Create a virtual environment:** It's recommended to create a new virtual environment to isolate project dependencies.
 2. **Install requirements:** Install the required packages using the provided requirements file:
@@ -22,9 +22,9 @@
 
 
 
-**## Getting Started**
+## Getting Started
 
-**1. Prepare Dataset**
+1. Prepare Dataset
 
    * **Use `gen_data`:** For supported datasets, use the following command to download and preprocess data:
 
@@ -46,4 +46,4 @@
       ```
 
 
-**## TODO**
+## TODO
