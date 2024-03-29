@@ -1,42 +1,49 @@
-# NLP
-# Installation
-Create a new virtual env and install all the needed requirements with
-`pip install -r reqs.txt`
+**# NLP Project**
 
-# WIP Code structure
-+ `data.py` -> basic data preprocessing (e.g. tokenization, dataloaders ect.)
-+ `metric.py` -> Some basic metric implementation
-+ `gen_data` -> data generation from github
-+ `early_stopping` -> simple (but general) early stopping mechanism
-+ `wrapper` -> main wrapper class that performs generic training and evaluation
-+ `__main__` -> main script
+**## Installation**
 
-# WIP main
-General main structure is :
+1. **Create a virtual environment:** It's recommended to create a new virtual environment to isolate project dependencies.
+2. **Install requirements:** Install the required packages using the provided requirements file:
+    ```bash
+    pip install -r reqs.txt
+    ```
 
-+ load the data (main function `load_lang_data` from `data.py`)
-+ create the model wrapper (main function `Wrapper` from `wrapper.py`)
-+ process data  (main function `process_dataset` from `data.py`)
-+ create dataloaders (main function `get_dataloader` from `data.py`)
-+ run the `Wrapper.train`  function
-+ run the `Wrapper.evaluate`  function
-+ save model
+## Code Structure
 
-**NOTE** all the function have quite some parameters with sensible defaults. Theoretically speaking you should be able to run eveything with the defaults but you might want to change something so please look into the parameters. In the future i plan to write a dataclass that incorporates all the parameters in one place. But for now there is not if you want you need to do it manually.
-
-# Gen Data for Relatedness
-Run the following command to generate all data
-`python -m nlp.gen_data -l all`
-To see all the options please use the help with
-`python -m nlp.gen_data -h`
+* **`data.py`** Contains functions for essential data preprocessing tasks like tokenization and the creation of data loaders.
+* **`metric.py`**  Implements various metrics for evaluating model performance.
+* **`gen_data`** Handles downloading and preparing datasets from a GitHub repository.
+* **`early_stopping`** Provides a flexible early stopping mechanism to prevent overfitting during training.
+* **`wrapper`**  The `Wrapper` class encapsulates common training and evaluation procedures.
+* **`cli.py`** Defines the command-line interface (CLI) structure, including arguments and subcommands (like 'baseline' and 'related').
+* **`runner.py`**  Contains functions like `run_baseline` and `run_relatedness`, which hold the core logic for running different types of experiments.
+* **`hyper.py`** Defines the `HyperRelatedness` dataclass to store experiment-related hyperparameters.
+* **`__main__`** The main script where you configure experiments and launch training/evaluation routines.
 
 
-# Running Baselines
-Run the following command to get the available options for the baseline
-`python -m nlp baseline --help`
-Then run choice a set of options and run the program for example:
-`python -m nlp baseline --logger print --early_patience 5 --val_epoch 2 --max_epoch 1 --lang spa`
+
+**## Getting Started**
+
+**1. Prepare Dataset**
+
+   * **Use `gen_data`:** For supported datasets, use the following command to download and preprocess data:
+
+      ```bash
+      python -m nlp.gen_data -l all  # Download all supported datasets
+      ```
+      Use `python -m nlp.gen_data -h` for options and help.
+	  If you want to download a language which is not included edit the `gen_data.py` file
+
+**2. Run Baseline Experiments**
+
+   * **Check Available Options:**
+      ```bash
+      python -m nlp baseline --help
+      ```
+   * **Example Run with Selected Parameters:**
+      ```bash
+      python -m nlp baseline --logger print --early_patience 5 --val_epoch 2 --max_epoch 1 --lang spa
+      ```
 
 
-# TODO
-+ More documentation and comments
+**## TODO**
