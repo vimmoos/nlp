@@ -5,6 +5,7 @@ import json
 import gzip
 from multiprocess import Pool
 from functools import partial
+from typing import Tuple, Dict, Any
 
 INFO = """
 The version indicate the commit from the git repo:
@@ -20,14 +21,48 @@ MODE_NAMIG = {
 }
 
 
-def read_lang(lang: str, version: str, base_url: str):
+def read_lang(lang: str, version: str, base_url: str) -> Tuple[object, str]:
+    """Reads language data from a given URL structure.
+
+    Args:
+        lang: The language code.
+        version: Version identifier (e.g., branch name or commit hash).
+        base_url: The base URL where language files are located.
+
+    Returns:
+        Dict[str, Any]:
+            * A Hugging Face Dataset object containing the loaded data.
+            * The version string.
+    """
+
     base_file_name = base_url + version + "/part1/data/" + lang
+
+    # Construct filenames for 'train', 'test', and 'val' splits
     data_file = {k: base_file_name + v for k, v in MODE_NAMIG.items()}
+
     dataset = load_dataset("text", data_files=data_file)
     return dataset, version
 
 
-def extract_process(dataset: dict, version: str):
+def extract_process(dataset: Dict[str, Any], version: str) -> Dict[str, Any]:
+    """Extracts and restructures data for the model.
+
+    Args:
+        dataset: A dictionary containing data for different modes (e.g., 'train', 'test').
+        version: Version identifier (e.g., branch name or commit hash).
+
+    Returns:
+        Dict[str, Any]: A processed dictionary with the following structure:
+            {
+                'mode': {
+                    'data': [...],  # List of processed data examples
+                    'version': str,
+                    'info': str
+                },
+                ... (for each mode)
+            }
+    """
+
     return {
         mode: {
             "data": [
@@ -35,10 +70,10 @@ def extract_process(dataset: dict, version: str):
                     k: v
                     for k, v in zip(
                         ["lemma", "features", "inflected"],
-                        vs["text"].split("\t"),
+                        line["text"].split("\t"),
                     )
                 }
-                for vs in data
+                for line in data
             ],
             "version": version,
             "info": INFO,
@@ -47,19 +82,45 @@ def extract_process(dataset: dict, version: str):
     }
 
 
-def dump(data: dict, lang: str, base_path: Path):
-    base_path.mkdir(exist_ok=True, parents=True)
+def dump(data: Dict[str, Any], lang: str, base_path: Path):
+    """Serializes and compresses data into JSON files.
+
+    Args:
+        data: A dictionary containing the data to be dumped. It's expected
+            to have different modes ('train', 'test',  'val') as keys.
+        lang: The language code.
+        base_path: The base directory where the files will be saved.
+    """
+
+    base_path.mkdir(
+        exist_ok=True, parents=True
+    )  # Create the directory if needed
+
     for mode, val in data.items():
-        with gzip.open(base_path / f"{lang}_{mode}.json.gz", "wt") as f:
+        filepath = (
+            base_path / f"{lang}_{mode}.json.gz"
+        )  # Construct output filepath
+
+        with gzip.open(filepath, "wt") as f:  # Open file with gzip compression
             json.dump(val, f)
 
 
 def pre_proc_data(lang: str, version: str, base_url: str, base_path: str):
+    """Coordinates the data preprocessing pipeline for a single language.
+
+    Args:
+        lang: The language code.
+        version: Version identifier (e.g., branch name or commit hash).
+        base_url: The base URL where raw data files are located.
+        base_path: The base directory where processed data will be saved.
+    """
+
     if isinstance(base_path, str):
-        base_path = Path(base_path)
-    raw = read_lang(lang, version, base_url)
-    processed = extract_process(*raw)
-    dump(processed, lang, base_path)
+        base_path = Path(base_path)  # Convert string paths to Path objects
+
+    raw_data, raw_version = read_lang(lang, version, base_url)  # Read raw data
+    processed_data = extract_process(raw_data, raw_version)  # Process the data
+    dump(processed_data, lang, base_path)  # Save processed data
 
 
 if __name__ == "__main__":
