@@ -138,12 +138,12 @@ class Wrapper:
             self.model_name, **self.model_kwargs
         )
         self.model = get_peft_model(self._model, self.peft_config)
+        self.model.print_trainable_parameters()
         self.re_init()
 
     def re_init(self):
         self.model.to(self.device)
 
-        self.model.print_trainable_parameters()
         self.optimizer = self.optimizer_cls(
             self.model.parameters(), **self.optimizer_kwargs
         )
@@ -211,9 +211,15 @@ class Wrapper:
         self.logger.log(out_put)
         stop: bool = False
         if self.early_stopping and val:
-            stop = self.early_stop(
+            stop, reset = self.early_stop(
                 out_put[f"{log_prefix}/{self.val_metrics[0].__name__}"]
             )
+
+            # NOTE SCARY STUFF! you cannot run two at the same time you
+            # will override the best model so becarefull
+            # In the train the TMP_BEST will be loaded when early stop happens
+            if reset:
+                self.save_model([], "TMP_BEST")
 
         if save_path is not None:
             save_path = Path(save_path)
@@ -252,6 +258,7 @@ class Wrapper:
                 )
                 if stop:
                     self.logger.log({f"train_{log_prefix}_stop": epoch})
+                    self.load_model([], "TMP_BEST")
                     return
 
     def get_save_path(self, languages: list, name_suffix: str):
