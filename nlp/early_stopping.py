@@ -12,7 +12,9 @@ class EarlyStopping:
 
     def __post_init__(self):
         self.debug = (
-            (lambda *args: print(*args)) if self.debug else (lambda *args: None)
+            (lambda *args: print(*args))
+            if self.debug
+            else (lambda *args: None)
         )
 
     def __call__(self, metric):

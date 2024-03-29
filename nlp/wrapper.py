@@ -7,7 +7,7 @@ from tqdm import tqdm, trange
 from nlp.metric import hamming_dist, similarity
 from nlp.early_stopping import EarlyStopping
 import numpy as np
-from peft import LoraConfig, TaskType, get_peft_model
+from peft import LoraConfig, TaskType, get_peft_model, PeftModel, PeftConfig
 
 ## Some base logger implementation
 
@@ -138,6 +138,9 @@ class Wrapper:
             self.model_name, **self.model_kwargs
         )
         self.model = get_peft_model(self._model, self.peft_config)
+        self.re_init()
+
+    def re_init(self):
         self.model.to(self.device)
 
         self.model.print_trainable_parameters()
@@ -190,13 +193,19 @@ class Wrapper:
         self.model.eval()
         pred_text = []
         target_text = []
+        inp_text = []
         with th.no_grad():
             for batch in tqdm(test_loader):
                 out_put = self.model.generate(
                     input_ids=batch["input_ids"].to(self.device)
                 )
+                inp_text.extend(
+                    [self.decode(inp) for inp in batch["input_ids"]]
+                )
                 pred_text.extend([self.decode(out) for out in out_put])
-                target_text.extend(list([self.decode(lab) for lab in batch["labels"]]))
+                target_text.extend(
+                    [self.decode(lab) for lab in batch["labels"]]
+                )
 
         out_put = self.eval_metrics(pred_text, target_text, log_prefix)
         self.logger.log(out_put)
@@ -207,8 +216,11 @@ class Wrapper:
             )
 
         if save_path is not None:
+            save_path = Path(save_path)
+            save_path.parent.mkdir(parents=True, exist_ok=True)
             with open(save_path, "w", encoding="utf-8") as f:
-                f.write("\n".join(pred_text))
+                for pred, target, inp in zip(pred_text, target_text, inp_text):
+                    f.write(f"{inp}\t\t{target}\t\t{pred}\n")
         return out_put, stop
 
     def train(self, train_loader, val_loader, log_prefix=""):
@@ -226,14 +238,78 @@ class Wrapper:
                 loss.backward()
                 self.optimizer.step()
                 self.optimizer.zero_grad()
-                self.logger.log({f"train/{log_prefix}loss": loss.detach().item()})
+                self.logger.log(
+                    {f"train/{log_prefix}loss": loss.detach().item()}
+                )
             self.lr_scheduler.step()
-            self.logger.log({f"train/{log_prefix}lr": self.lr_scheduler.get_last_lr()})
+            self.logger.log(
+                {f"train/{log_prefix}lr": self.lr_scheduler.get_last_lr()}
+            )
 
-            if epoch % self.val_epoch == 0:
+            if (epoch != 0) and (epoch % self.val_epoch == 0):
                 _, stop = self.evaluate(
                     val_loader, val=True, log_prefix=f"{log_prefix}val"
                 )
                 if stop:
                     self.logger.log({f"train_{log_prefix}_stop": epoch})
                     return
+
+    def get_save_path(self, languages: list, name_suffix: str):
+        return f"model_{'_'.join(languages)}_{name_suffix}.pt"
+
+    def save_model(
+        self,
+        languages: list,
+        name_suffix: str = "",
+        save_dir: Path = Path("models"),
+    ):
+        """Saves the model and its adapters using PEFT's functionalities.
+
+        Args:
+            languages: List of languages the model was trained on.
+            name_suffix: String to be concat to the model filename for uniqueness.
+            save_dir: Path directory for saving the model (default: models/).
+
+        Raises:
+            OSError: If the save directory cannot be created.
+        """
+
+        save_dir.mkdir(parents=True, exist_ok=True)
+        model_name = self.get_save_path(languages, name_suffix)
+        model_path = save_dir / model_name
+
+        self.model.save_pretrained(str(model_path))
+
+    def load_model(
+        self,
+        languages: list,
+        name_suffix: str = "",
+        load_dir: Path = Path("models"),
+        is_trainable: bool = True,
+    ):
+        """Loads a pre-trained model and its adapters using PEFT's functionalities.
+
+        Args:
+            languages: List of languages used for constructing the model filename to load.
+            name_suffix: String used for constructing the model filename to load.
+            load_dir: Path to the directory containing the saved model (default: models/).
+
+        Returns:
+            Wrapper: A new Wrapper instance loaded with the specified model and adapters.
+
+        Raises:
+            OSError: If the load directory or model file is not found.
+        """
+
+        load_dir = load_dir / self.get_save_path(languages, name_suffix)
+
+        if not load_dir.is_dir():
+            raise OSError(f"Model file not found: {load_dir}")
+
+        conf = PeftConfig.from_pretrained(load_dir)
+        model = self.model_cls.from_pretrained(conf.base_model_name_or_path)
+        self.model = PeftModel.from_pretrained(
+            model, load_dir, is_trainable=is_trainable
+        )
+        self.model.to(self.device)
+        self.re_init()

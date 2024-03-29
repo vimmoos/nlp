@@ -59,3 +59,7 @@ def create_chrf(**kwargs):
         return res["score"]
 
     return tr_chrf
+
+
+def accuracy(pred: str, target: str) -> float:
+    return float(pred == target)

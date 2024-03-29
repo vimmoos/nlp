@@ -11,7 +11,7 @@ The version indicate the commit from the git repo:
 https://github.com/sigmorphon/2023InflectionST
 """
 
-LANGS = ["dan", "deu", "eng", "ita", "tur"]
+LANGS = ["dan", "deu", "eng", "ita", "tur", "spa", "fra"]
 
 MODE_NAMIG = {
     "train": ".trn",
@@ -33,16 +33,17 @@ def extract_process(dataset: dict, version: str):
             "data": [
                 {
                     k: v
-                    for k, v in zip(["lemma", "features", "inflected"], vs.split("\t"))
+                    for k, v in zip(
+                        ["lemma", "features", "inflected"],
+                        vs["text"].split("\t"),
+                    )
                 }
-                for vs in json.loads(http_data["text"][0])["payload"]["blob"][
-                    "rawLines"
-                ]
+                for vs in data
             ],
             "version": version,
             "info": INFO,
         }
-        for mode, http_data in dataset.items()
+        for mode, data in dataset.items()
     }
 
 
@@ -75,7 +76,7 @@ if __name__ == "__main__":
         "-u",
         "--base_url",
         type=str,
-        default="https://github.com/sigmorphon/2023InflectionST/tree/",
+        default="https://raw.github.com/sigmorphon/2023InflectionST/",
         help="the github repo from which the data will be taken",
     )
 

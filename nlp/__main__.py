@@ -1,46 +1,49 @@
-from nlp import wrapper, data, metric
-from functools import partial
-from transformers import get_linear_schedule_with_warmup
+from nlp import wrapper, data, metric, cli
 
-_dataset = data.load_lang_data("ita")
+cli.run_cli()
 
-wmodel = wrapper.Wrapper(
-    "google/byt5-small",
-    logger=wrapper.Print_Logger,
-    val_epoch=1,
-    epoch=100,
-    val_metrics=[metric.chr_f, metric.hamming_dist, metric.similarity],
-    # lr_scheduler_cls=get_linear_schedule_with_warmup,
-    # lr_scheduler_kwargs=dict(num_warmup_steps=0, num_training_steps=3),
-)
+# from functools import partial
+# from transformers import get_linear_schedule_with_warmup
 
-# Note we do this because the training data needs a special treatment:
-# the padding values added by the tokenizer needs to be change to a
-# negative value to ensure that the model learn only from the important parts.
-# See comment in the function data.pre_tok for the mask_padding variable
-_train_dataset = _dataset.pop("train")
+# _dataset = data.load_lang_data("ita")
 
-dataset = data.process_dataset(
-    _dataset,
-    partial(data.pre_tok, tok=wmodel.tokenizer, max_length=128, mask_padding=False),
-    _dataset["test"].column_names,
-)
+# wmodel = wrapper.Wrapper(
+#     "google/byt5-small",
+#     logger=wrapper.Print_Logger,
+#     val_epoch=1,
+#     epoch=100,
+#     val_metrics=[metric.chr_f, metric.hamming_dist, metric.similarity],
+#     # lr_scheduler_cls=get_linear_schedule_with_warmup,
+#     # lr_scheduler_kwargs=dict(num_warmup_steps=0, num_training_steps=3),
+# )
 
-train_dataset = data.process_dataset(
-    _train_dataset,
-    partial(data.pre_tok, tok=wmodel.tokenizer, max_length=128),
-    _dataset["test"].column_names,
-)
+# # Note we do this because the training data needs a special treatment:
+# # the padding values added by the tokenizer needs to be change to a
+# # negative value to ensure that the model learn only from the important parts.
+# # See comment in the function data.pre_tok for the mask_padding variable
+# _train_dataset = _dataset.pop("train")
 
+# dataset = data.process_dataset(
+#     _dataset,
+#     partial(data.pre_tok, tok=wmodel.tokenizer, max_length=128, mask_padding=False),
+#     _dataset["test"].column_names,
+# )
 
-train_load = data.get_dataloader(train_dataset, pin_memory=False)
-test_load = data.get_dataloader(dataset["test"], pin_memory=False)
-val_load = data.get_dataloader(dataset["val"], pin_memory=False)
+# train_dataset = data.process_dataset(
+#     _train_dataset,
+#     partial(data.pre_tok, tok=wmodel.tokenizer, max_length=128),
+#     _dataset["test"].column_names,
+# )
 
 
-wmodel.train(train_load, val_load)
+# train_load = data.get_dataloader(train_dataset, pin_memory=False)
+# test_load = data.get_dataloader(dataset["test"], pin_memory=False)
+# val_load = data.get_dataloader(dataset["val"], pin_memory=False)
 
-wmodel.evaluate(test_load)
+
+# wmodel.train(train_load, val_load)
+
+# wmodel.evaluate(test_load)
 
 
 # TODO  SAVING AND LOADING PROCEDURE

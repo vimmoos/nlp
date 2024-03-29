@@ -1,37 +1,11 @@
 from nlp.hyper import HyperRelatedness
 from nlp import wrapper, data, metric
-from functools import partial
+from peft import TaskType
+from pathlib import Path
 
 
-def load_dataset(lang: str, tok: object):
-    _dataset = data.load_lang_data(lang)
-
-    # Note we do this because the training data needs a special treatment:
-    # the padding values added by the tokenizer needs to be change to a
-    # negative value to ensure that the model learn only from the important parts.
-    # See comment in the function data.pre_tok for the mask_padding variable
-    _train_dataset = _dataset.pop("train")
-
-    dataset = data.process_dataset(
-        _dataset,
-        partial(data.pre_tok, tok=tok, max_length=128, mask_padding=False),
-        _dataset["test"].column_names,
-    )
-
-    train_dataset = data.process_dataset(
-        _train_dataset,
-        partial(data.pre_tok, tok=tok, max_length=128),
-        _dataset["test"].column_names,
-    )
-    return {
-        "train": data.get_dataloader(train_dataset, pin_memory=False),
-        "test": data.get_dataloader(dataset["test"], pin_memory=False),
-        "val": data.get_dataloader(dataset["val"], pin_memory=False),
-    }
-
-
-def run_relatedness(conf: HyperRelatedness):
-    wmodel = wrapper.Wrapper(
+def make_wrapper(conf: HyperRelatedness):
+    return wrapper.Wrapper(
         "google/byt5-small",
         logger=conf.logger,
         val_epoch=conf.val_epoch,
@@ -40,56 +14,107 @@ def run_relatedness(conf: HyperRelatedness):
         early_stopping_kwargs=dict(
             patience=conf.early_patience, invert=conf.early_invert
         ),
+        peft_config_kwargs=dict(
+            task_type=TaskType.SEQ_2_SEQ_LM,
+            inference_mode=False,
+            r=conf.r,
+            lora_alpha=conf.lora_alpha,
+            lora_dropout=conf.lora_dropout,
+        ),
     )
 
+
+def run_baseline(conf: HyperRelatedness):
+    """Trains a model on a single language for baseline results."""
+
+    wmodel = make_wrapper(conf)
+
+    lang = conf.train_languages[0]
+
+    datasets = data.load_data(lang, wmodel.tokenizer)
+
+    name_suffix = "BASELINE"
+
+    wmodel.train(
+        datasets["train"],
+        datasets["val"],
+        log_prefix=lang + "_",
+    )
+
+    # Evaluate on the training language's test set
+    wmodel.evaluate(
+        datasets["test"],
+        log_prefix="test_" + lang,
+        save_path=Path("results") / wmodel.get_save_path([lang], name_suffix),
+    )
+
+    wmodel.save_model([lang], name_suffix)
+
+
+def run_relatedness(conf: HyperRelatedness):
+    """Trains the model initially on train_languages and then performs zero-shot evaluation
+    on test languages. It then incrementally fine-tunes on samples from test language
+    datasets.
+    """
+
+    # Create a Wrapper object
+    wmodel = make_wrapper(conf)
+    # Load Datasets
     datasets = {
-        lang: load_dataset(lang, wmodel.tokenizer)
-        for lang in set(conf.train_languages).union(set(conf.test_languages))
+        lang: data.load_data(lang, wmodel.tokenizer)
+        for lang in conf.train_languages + conf.test_languages
     }
 
-    for lang in conf.train_languages:
-        wmodel.train(
-            datasets[lang]["train"],
-            datasets[lang]["val"],
-            log_prefix=lang + "_",
+    # # Initial Training on train_languages
+    # for lang in conf.train_languages:
+    #     wmodel.train(
+    #         datasets[lang]["train"],
+    #         datasets[lang]["val"],
+    #         log_prefix=lang + "_",
+    #     )
+    #     # Optionally save the model after training on all train_languages
+
+    # print("done Training")
+    # wmodel.save_model(conf.train_languages, "PRETRAINED")
+
+    # wmodel.epoch = 1
+    wmodel.load_model(conf.train_languages, "PRETRAINED")
+    # Zero-Shot Evaluation and Incremental Fine-Tuning
+    sample_sizes = [0, 5, 50, 200]  # Sample sizes for fine-tuning
+    for lang in conf.test_languages:
+        print("zero shot")
+        # Zero-shot
+        wmodel.evaluate(
+            datasets[lang]["test"],
+            log_prefix=f"test_{lang}_zero_shot",
+            save_path=Path("results")
+            / wmodel.get_save_path(conf.train_languages, f"{lang}_zero_shot"),
         )
 
-    for lang in conf.test_languages:
-        wmodel.evaluate(datasets[lang]["test"], log_prefix="test_" + lang)
+        # Fine-tuning with Increasing Sample Sizes
+        for sample_size in sample_sizes[1:]:
+            print(f"finetunning {sample_size}")
+            log_prefix = f"{lang}_sample_{sample_size}"
 
+            # Reload the initial model (trained on train_languages)
+            wmodel.load_model(conf.train_languages, "PRETRAINED")
 
-if __name__ == "__main__":
-    import wandb
+            # Sample dataset (implement sampling logic for your datasets)
+            sampled_dataset = data.sample_dataset(
+                datasets[lang]["train"], sample_size, seed=conf.seed
+            )
 
-    conf = HyperRelatedness(
-        logger="wandb",
-        early_patience=3,
-        early_invert=True,
-        val_metrics=[
-            "tr_chrf",
-            "chr_f",
-            "hamming_dist",
-            "similarity",
-        ],
-        val_epoch=1,
-        max_epoch=100,
-        train_languages=["tur", "eng"],
-        test_languages=["eng"],
-    )
+            # Fine-tune on the sampled dataset
+            wmodel.train(
+                sampled_dataset,
+                datasets[lang]["val"],  # Might want to sample val as well
+                log_prefix=log_prefix,
+            )
 
-    run = wandb.init(
-        project="test_nlp",
-        config=conf.dict(),
-    )
-
-    conf.logger = wandb
-    conf.val_metrics = [
-        metric.create_chrf(),
-        metric.chr_f,
-        metric.hamming_dist,
-        metric.similarity,
-    ]
-
-    run_relatedness(conf)
-
-    wandb.finish()
+            # Evaluate on the test set
+            wmodel.evaluate(
+                datasets[lang]["test"],
+                log_prefix="test_" + log_prefix,
+                save_path=Path("results")
+                / wmodel.get_save_path(conf.train_languages, log_prefix),
+            )
