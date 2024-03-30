@@ -33,7 +33,7 @@ def run_baseline(conf: HyperRelatedness):
 
     datasets = data.load_data(lang, wmodel.tokenizer)
 
-    name_suffix = "BASELINE"
+    name_suffix = f"BASELINE_{conf.r}"
 
     wmodel.train(
         datasets["train"],
@@ -51,15 +51,23 @@ def run_baseline(conf: HyperRelatedness):
     wmodel.save_model([lang], name_suffix)
 
 
-def train_model(conf, wrapper):
+def train_model(conf, wmodel):
+    name_suffix = f"BASELINE_{conf.r}"
     for lang in conf.train_languages:
-        dataset = data.load_data(lang, wrapper.tokenizer)
-        wrapper.train(
+        dataset = data.load_data(lang, wmodel.tokenizer)
+        wmodel.train(
             dataset["train"],
             dataset["val"],
             log_prefix=lang + "_",
         )
-    wrapper.save_model(conf.train_languages, "BASELINE")
+
+        wmodel.evaluate(
+            dataset["test"],
+            log_prefix="test_" + lang,
+            save_path=Path("results")
+            / wmodel.get_save_path([lang], name_suffix),
+        )
+    wmodel.save_model(conf.train_languages, name_suffix)
 
 
 def run_relatedness(conf: HyperRelatedness):
@@ -68,41 +76,54 @@ def run_relatedness(conf: HyperRelatedness):
     datasets.
     """
 
+    if conf.train_languages == conf.test_languages:
+        print("PRETRAINED IS THE SAME AS TESTING SKIPPING")
+        return
+
     # Create a Wrapper object
     wmodel = make_wrapper(conf)
 
+    name_suffix = f"BASELINE_{conf.r}"
+
     base_path = Path("models") / wmodel.get_save_path(
-        conf.train_languages, "BASELINE"
+        conf.train_languages, name_suffix
     )
     if not base_path.is_dir():
-        train_model(conf, wrapper)
+        print(f"PRETRAIN {base_path} NOT PRESENT")
+        print(f"START TRAINING {base_path}")
+        train_model(conf, wmodel)
 
     # YEs or No ?
-    wmodel.epoch = 1
+    # wmodel.epoch = 1
 
-    wmodel.load_model(conf.train_languages, "BASELINE")
+    print(f"LOAD PRETRAINED {base_path}")
+    wmodel.load_model(conf.train_languages, name_suffix)
 
     datasets = {
-        lang: data.load_data(lang, wrapper.tokenizer)
+        lang: data.load_data(lang, wmodel.tokenizer)
         for lang in conf.test_languages
     }
     # Zero-Shot Evaluation and Incremental Fine-Tuning
-    sample_sizes = [0, 5, 50, 200]  # Sample sizes for fine-tuning
+    sample_sizes = [0, 5, 50, 200, 1000]  # Sample sizes for fine-tuning
+    train_langs = f"{'_'.join(conf.train_languages)}_{conf.r}"
     for lang in conf.test_languages:
         # Zero-shot
         wmodel.evaluate(
             datasets[lang]["test"],
-            log_prefix=f"test_{lang}_zero_shot",
+            log_prefix=f"test_{lang}_{train_langs}_zero_shot",
             save_path=Path("results")
-            / wmodel.get_save_path(conf.train_languages, f"{lang}_zero_shot"),
+            / wmodel.get_save_path(
+                conf.train_languages, f"{lang}{conf.r}_zero_shot"
+            ),
         )
 
         # Fine-tuning with Increasing Sample Sizes
         for sample_size in sample_sizes[1:]:
-            log_prefix = f"{lang}_sample_{sample_size}"
+            log_prefix = f"{lang}_{train_langs}_sample{sample_size}_"
+            save_suffix = f"{lang}{conf.r}_sample{sample_size}"
 
             # Reload the initial model (trained on train_languages)
-            wmodel.load_model(conf.train_languages, "BASELINE")
+            wmodel.load_model(conf.train_languages, name_suffix)
 
             # Sample dataset
             sampled_dataset = data.sample_dataset(
@@ -121,5 +142,6 @@ def run_relatedness(conf: HyperRelatedness):
                 datasets[lang]["test"],
                 log_prefix="test_" + log_prefix,
                 save_path=Path("results")
-                / wmodel.get_save_path(conf.train_languages, log_prefix),
+                / wmodel.get_save_path(conf.train_languages, save_suffix),
             )
+            wmodel.save_model(conf.train_languages, save_suffix)

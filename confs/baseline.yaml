@@ -1,0 +1,41 @@
+command:
+  - ${env}
+  - ${interpreter}
+  - -m
+  - nlp
+  - baseline
+  - ${args}
+method: grid
+parameters:
+  lang:
+    values:
+      - fra
+      - ita
+      - spa
+      - tur
+  rank:
+    values:
+      - 8
+      - 4
+      - 16
+  logger:
+    values:
+      - wandb
+  lora_alpha:
+    values:
+      - 32
+  lora_dropout:
+    values:
+      - 0.1
+  max_epoch:
+    values:
+      - 100
+  seed:
+    values:
+      - 42
+  val_epoch:
+    values:
+      - 1
+  early_patience:
+    values:
+      - 5
