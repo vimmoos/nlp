@@ -39,5 +39,7 @@ class HyperRelatedness:
     lora_alpha: int = 32  # LoRA scaling factor.
     lora_dropout: float = 0.1  # LoRA dropout.
 
+    with_peft: bool = True
+
     dict = asdict
     # Method to convert the dataclass into a dictionary.

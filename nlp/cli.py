@@ -50,6 +50,8 @@ base_args = {
 
 
 def make_hyper(args):
+    full = args.full if args.command == "baseline" else False
+
     conf = hyper.HyperRelatedness(
         logger=args.logger,
         early_patience=args.early_patience,
@@ -68,6 +70,7 @@ def make_hyper(args):
         r=args.rank,
         lora_alpha=args.lora_alpha,
         lora_dropout=args.lora_dropout,
+        with_peft=not full,
     )
 
     print(conf.dict())
@@ -117,6 +120,12 @@ def run_cli():
         type=str,
         required=True,
         help="Language to train the model on",
+    )
+
+    baseline_parser.add_argument(
+        "--full",
+        action="store_true",
+        help="Perform a fine-tuning on the whole model",
     )
 
     relatedness_parser.add_argument(

@@ -104,6 +104,8 @@ class Wrapper:
         )
     )
 
+    with_peft: bool = True
+
     peft_config_cls: object = field(default_factory=lambda: LoraConfig)
 
     peft_config_kwargs: Dict[str, Any] = field(
@@ -134,11 +136,13 @@ class Wrapper:
 
         self.peft_config = self.peft_config_cls(**self.peft_config_kwargs)
 
-        self._model = self.model_cls.from_pretrained(
+        self.model = self.model_cls.from_pretrained(
             self.model_name, **self.model_kwargs
         )
-        self.model = get_peft_model(self._model, self.peft_config)
-        self.model.print_trainable_parameters()
+        if self.with_peft:
+            self.model = get_peft_model(self.model, self.peft_config)
+            self.model.print_trainable_parameters()
+
         self.re_init()
 
     def re_init(self):
@@ -313,10 +317,14 @@ class Wrapper:
         if not load_dir.is_dir():
             raise OSError(f"Model file not found: {load_dir}")
 
-        conf = PeftConfig.from_pretrained(load_dir)
-        model = self.model_cls.from_pretrained(conf.base_model_name_or_path)
-        self.model = PeftModel.from_pretrained(
-            model, load_dir, is_trainable=is_trainable
-        )
-        self.model.to(self.device)
+        if self.with_peft:
+            conf = PeftConfig.from_pretrained(load_dir)
+            model = self.model_cls.from_pretrained(
+                conf.base_model_name_or_path
+            )
+            self.model = PeftModel.from_pretrained(
+                model, load_dir, is_trainable=is_trainable
+            )
+        else:
+            self.model = self.model_cls.from_pretrained(load_dir)
         self.re_init()

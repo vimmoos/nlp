@@ -1,0 +1,31 @@
+command:
+  - ${env}
+  - ${interpreter}
+  - -m
+  - nlp
+  - baseline
+  - --full
+  - ${args}
+method: grid
+parameters:
+  lang:
+    values:
+      - fra
+      - ita
+      - spa
+      - tur
+  logger:
+    values:
+      - wandb
+  max_epoch:
+    values:
+      - 100
+  seed:
+    values:
+      - 42
+  val_epoch:
+    values:
+      - 1
+  early_patience:
+    values:
+      - 5

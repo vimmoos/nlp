@@ -21,38 +21,12 @@ def make_wrapper(conf: HyperRelatedness):
             lora_alpha=conf.lora_alpha,
             lora_dropout=conf.lora_dropout,
         ),
+        with_peft=conf.with_peft,
     )
 
 
-def run_baseline(conf: HyperRelatedness):
-    """Trains a model on a single language for baseline results."""
-
-    wmodel = make_wrapper(conf)
-
-    lang = conf.train_languages[0]
-
-    datasets = data.load_data(lang, wmodel.tokenizer)
-
-    name_suffix = f"BASELINE_{conf.r}"
-
-    wmodel.train(
-        datasets["train"],
-        datasets["val"],
-        log_prefix=lang + "_",
-    )
-
-    # Evaluate on the training language's test set
-    wmodel.evaluate(
-        datasets["test"],
-        log_prefix="test_" + lang,
-        save_path=Path("results") / wmodel.get_save_path([lang], name_suffix),
-    )
-
-    wmodel.save_model([lang], name_suffix)
-
-
-def train_model(conf, wmodel):
-    name_suffix = f"BASELINE_{conf.r}"
+def train_model(conf, wmodel, name_prefix: str = "BASELINE"):
+    name_suffix = f"{name_prefix}_{conf.r}"
     for lang in conf.train_languages:
         dataset = data.load_data(lang, wmodel.tokenizer)
         wmodel.train(
@@ -68,6 +42,16 @@ def train_model(conf, wmodel):
             / wmodel.get_save_path([lang], name_suffix),
         )
     wmodel.save_model(conf.train_languages, name_suffix)
+
+
+def run_baseline(conf: HyperRelatedness):
+    """Trains a model on a single language for baseline results."""
+
+    wmodel = make_wrapper(conf)
+
+    train_model(
+        conf, wmodel, "BASELINE" if conf.with_peft else "FULL_BASELINE"
+    )
 
 
 def run_relatedness(conf: HyperRelatedness):
@@ -92,9 +76,6 @@ def run_relatedness(conf: HyperRelatedness):
         print(f"PRETRAIN {base_path} NOT PRESENT")
         print(f"START TRAINING {base_path}")
         train_model(conf, wmodel)
-
-    # YEs or No ?
-    # wmodel.epoch = 1
 
     print(f"LOAD PRETRAINED {base_path}")
     wmodel.load_model(conf.train_languages, name_suffix)
