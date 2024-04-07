@@ -7,16 +7,13 @@
     ```bash
     pip install -r reqs.txt
     ```
-## Results
-All the results of this study can be found here: https://wandb.ai/vimmoos/test_nlp
-To inspected we suggest to go on the sweep section and then navigate the different experiments from there https://wandb.ai/vimmoos/test_nlp/sweeps
 
 ## Configurations
 In the `confs` folder the different configurations for the experiments are present
 
 ## Pre-trained Models
-All the trained models are in the `models` folder.
-All the results of the model evaluation are in the `results` folder
+* All the trained models are in the `models` folder.
+* All the results of the model evaluation are in the `results` folder
 
 In case you want to use the trained model outside of the project please follow the instruction for loading PEFT models from here: https://huggingface.co/docs/peft/main/en/tutorial/peft_model_config#peft-models
 Generally you can use the following lines of code:
@@ -28,6 +25,10 @@ config = PeftConfig.from_pretrained("NAME_OF_THE_MODEL_FOLDER")
 model = AutoModelForSeq2SeqLM.from_pretrained(config.base_model_name_or_path)
 lora_model = PeftModel.from_pretrained(model, "NAME_OF_THE_MODEL_FOLDER")
 ```
+
+## Results
+All the results of this study can be found here: https://wandb.ai/vimmoos/test_nlp
+To inspected we suggest to go on the sweep section and then navigate the different experiments from there https://wandb.ai/vimmoos/test_nlp/sweeps
 
 
 
