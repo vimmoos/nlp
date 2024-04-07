@@ -15,7 +15,8 @@ To inspected we suggest to go on the sweep section and then navigate the differe
 In the `confs` folder the different configurations for the experiments are present
 
 ## Pre-trained Models
-All the trained models are in the `final_res.zip` file. If you want to use/evaluate then unzip the file and then move the `models` and `results` folder in the root folder of the project.
+All the trained models are in the `models` folder.
+All the results of the model evaluation are in the `results` folder
 
 In case you want to use the trained model outside of the project please follow the instruction for loading PEFT models from here: https://huggingface.co/docs/peft/main/en/tutorial/peft_model_config#peft-models
 Generally you can use the following lines of code:
