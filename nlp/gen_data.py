@@ -198,3 +198,5 @@ if __name__ == "__main__":
 
     with Pool() as p:
         p.map(partial(pre_proc_data, **base_args), LANGS)
+
+    create_multi_lang(**base_args, llang=ROMANCE)
