@@ -32,6 +32,7 @@ lora_model = PeftModel.from_pretrained(model, "NAME_OF_THE_MODEL_FOLDER")
 
 
 ## Getting Started
+**NOTE** If you want to use wandb as a logger make sure you are logged in in your machine. It will log everything in the project `test_nlp`
 
 **1. Prepare Dataset**
    * **Use `gen_data`:** For supported datasets, use the following command to download and preprocess data:
