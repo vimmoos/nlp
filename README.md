@@ -17,6 +17,18 @@ In the `confs` folder the different configurations for the experiments are prese
 ## Pre-trained Models
 All the trained models are in the `final_res.zip` file. If you want to use/evaluate then unzip the file and then move the `models` and `results` folder in the root folder of the project.
 
+In case you want to use the trained model outside of the project please follow the instruction for loading PEFT models from here: https://huggingface.co/docs/peft/main/en/tutorial/peft_model_config#peft-models
+Generally you can use the following lines of code:
+
+```python
+from peft import PeftModel, PeftConfig
+
+config = PeftConfig.from_pretrained("NAME_OF_THE_MODEL_FOLDER")
+model = AutoModelForSeq2SeqLM.from_pretrained(config.base_model_name_or_path)
+lora_model = PeftModel.from_pretrained(model, "NAME_OF_THE_MODEL_FOLDER")
+```
+
+
 
 ## Getting Started
 
