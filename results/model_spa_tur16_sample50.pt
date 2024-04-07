@@ -1,0 +1,1000 @@
+gücenmek	V;INFR;PRS;PROG;INTR;POS;NOM(3,PL)		güceniyorlar mıymış		gücenmiymiş olmay
+gücenmek	V;NEC;INFR;PRS;PROG;NEG;INTR;NOM(3,PL)		güceniyor olmamalılar mıymış		gücenmiş olmayaca
+kontak lens	N;GEN(PL;PSS(1,PL))		kontak lenslerimizin		kontak lensimizden
+koza	N;ABL(SG;PSS(1,PL))		kozamızdan		kozámden
+yoldurtmak	V;INFR;PRS;HAB;INTR;POS;NOM(1,PL)		yoldurtur muymuşuz		yoldurtmayacak mıy
+yapışmak	V;IND;FUT;PROG;NEG;DECL;NOM(2,PL)		yapışıyor olmayacaksınız		yapışmayacak olma
+koca	N;LOC(PL;PSS(1,PL))		kocalarımızda		kocamızdamızdam
+yangın	N;DAT(PL;PSS(3,SG))		yangınlarına		yangınlarında
+tıraş olmak	V;IND;FUT;PRSP;NEG;INTR;NOM(3,PL)		tıraş olacak olmayacaklar mı		tıraş olacaklar
+köpürmek	V;INFR;FUT;PERF;NEG;INTR;NOM(3,SG)		köpürmüş olmayacak mı		köpürmüyor olmay
+dağlı	N;LOC(SG)		dağlıda		dağlında
+yordam	N;DAT(SG;PSS(2,SG))		yordamına		yordamında
+övmek	V;INFR;PST;SG;NEG;INTR;NOM(1)		övmemiş miymişim		övmüş olmayacak 
+el sıkışmak	V;INFR;PST;PL;INTR;POS;NOM(1)		el sıkışmış mıymışız		el sıkışmıyor m
+karşılık	N;ACC(PL;PSS(1,PL))		karşılıklarımızı		karşılığımızd
+karşılık	N;DAT(PL)		karşılıklara		karşılıkların
+şırınga	N;NOM(SG;PSS(1,PL))		şırıngamız		şırıngummen
+sincap	N;GEN(PL;PSS(3,SG))		sincaplarının		sincaplardı
+parlatmak	V;INFR;PST;PL;POS;DECL;NOM(3)		parlatmışlarmış		parlatmayacak mıyd
+kipa	N;ACC(SG;PSS(1,PL))		kipamızı		kipamızı
+yoldurtmak	V;IND;PST;NEG;DECL;NOM(1,PL)		yoldurtmadık		yoldurtmayacak mıy
+ışın	N;SG;IND;PST;NOM(3,SG)		ışındı		ışında
+nefes aldırmak	V;IND;PST;POS;DECL;NOM(3,PL)		nefes aldırdılar		nefes aldırmayacak
+koza	N;GEN(SG;PSS(3,SG))		kozasının		kozacaksın
+ışın	N;PL;PRS;NOM(2,PL)		ışınlarsınız		ışınızda
+fotoğraf çekmek	V;NEC;PRS;PROG;NEG;DECL;NOM(3,PL)		fotoğraf çekiyor olmamalılar		fotoğraf çekmiş 
+mantık	N;NOM(PL;PSS(2,PL))		mantıklarınız		mantıklarızdan
+tıraş olmak	V;INFR;PST;SG;INTR;POS;NOM(2)		tıraş olmuş muymuşsun		tıraş olacak olac
+parlatmak	V;IND;PRS;HAB;NEG;INTR;NOM(3,SG)		parlatmaz mı		parlatmayacak mıyd
+hız	N;GEN(SG;PSS(2,PL))		hızınızın		hızın
+göndermek	V;NEC;INFR;PRS;PROG;NEG;INTR;NOM(1,PL)		gönderiyor olmamalı mıymışız		göndermiş olmuymu
+sümürmek	V;NEC;PST;POS;DECL;NOM(2,SG)		sümürmeliydin		sümürmeyecek olma
+ışın	N;PL;INFR;PST;NOM(1,SG)		ışınlarmışım		ışınmış
+osurmak	V;NEC;INFR;PST;NEG;DECL;NOM(3,PL)		osurmamalılarmış		osurmayacaklar
+solmak	V;NEC;PST;INTR;POS;NOM(3,SG)		solmalı mıydı		solmayacak mı
+üretmek	V;INFR;PST;NEG;INTR;NOM(2,SG)		üretmemiş misin		üretmeyecek miydi
+sümürmek	V;NEC;PRS;NEG;INTR;NOM(1,SG)		sümürmemeli miyim		sümürmüyor muydu
+tıraş olmak	V;NEC;PST;PROG;INTR;POS;NOM(3,PL)		tıraş oluyor olmalılar mıydı		tıraş olacaklar
+gücenmek	V;INFR;PST;NEG;DECL;NOM(3,PL)		gücenmemişler		gücenmiş olmayaca
+tutmak	V;NEC;PST;PROG;POS;DECL;NOM(2,PL)		tutuyor olmalıydınız		tutmayacak olmayaca
+gizlenmek	V;INFR;PRS;PROG;POS;DECL;NOM(2,PL)		gizleniyormuşsunuz		gizlenmiş olmuymu
+dermek	V;IND;PRS;HAB;POS;DECL;NOM(2,SG)		derersin		dermiyeceksin
+tıraş olmak	V;INFR;PST;PRSP;NEG;INTR;NOM(2,SG)		tıraş olmuş olmayacak mıydın		tıraş olmayacak m
+doğramak	V;IND;PRS;HAB;POS;DECL;NOM(3,SG)		doğrar		doğramaydık
+mayonez	N;DAT(PL)		mayonezlere		mayonezlerde
+karşılık	N;GEN(PL)		karşılıkların		karşılıklar
+koza	N;NOM(SG;PSS(2,SG))		kozan		kozan
+üretmek	V;INFR;PST;PERF;NEG;INTR;NOM(3,SG)		üretmemiş miydi		üretmeyecek miydi
+sincap	N;ACC(SG;PSS(3,SG))		sincabını		sincaplarında
+karşılık	N;GEN(SG;PSS(2,PL))		karşılığınızın		karşılığınızd
+birleşik kelime	N;ACC(PL)		birleşik kelimeleri		birleşik kelimeyer
+hız	N;GEN(PL;PSS(3,SG))		hızlarının		hızla
+büyümek	V;INFR;FUT;PERF;POS;DECL;NOM(1,SG)		büyümüş olacağım		büyümüş olmayac
+aygır	N;PL;PRS;NOM(1,SG)		aygırlarım		aygımlar
+dindarlık	N;NOM(PL;PSS(2,SG))		dindarlıkların		dindarlıklarında
+yüksek fırın	N;DAT(PL;PSS(2,PL))		yüksek fırınlarınıza		yüksek fırınızd
+birleşik kelime	N;NOM(SG)		birleşik kelime		birleşik kelimeyer
+aygır	N;GEN(PL;PSS(3,SG))		aygırlarının		aygırlar
+solmak	V;IND;PST;HAB;INTR;POS;NOM(2,PL)		solar mıydınız		solmayacak olmayaca
+sümürmek	V;IND;PST;PROG;NEG;DECL;NOM(1,SG)		sümürmüyordum		sümürmüyor muydu
+parlatmak	V;INFR;FUT;NEG;DECL;NOM(3,SG)		parlatmayacakmış		parlatmayacaksın
+nefes aldırmak	V;IND;PST;HAB;PROG;NEG;INTR;NOM(3,SG)		nefes aldırıyor olmaz mıydı		nefes aldırmayacak
+dermek	V;IND;PST;PRSP;PROG;INTR;POS;NOM(3,SG)		deriyor olacak mıydı		dermeyecek muydu
+yüksek fırın	N;ACC(SG;PSS(2,PL))		yüksek fırınınızı		yüksek fırınızd
+acı	N;ABL(SG)		acıdan		acındacında
+nefes aldırmak	V;INFR;FUT;PROG;POS;DECL;NOM(3,SG)		nefes aldırıyor olacakmış		nefes aldırmayacak
+üretmek	V;INFR;FUT;PROG;POS;DECL;NOM(2,SG)		üretiyor olacakmışsın		üretmeyecek olmuym
+fotoğraf çekmek	V;IND;PST;PROG;NEG;DECL;NOM(2,PL)		fotoğraf çekmiyordunuz		fotoğraf çekmiş 
+tıraş olmak	V;NEC;PRS;NEG;INTR;NOM(3,PL)		tıraş olmameliler mi		tıraş olacaklar
+doğramak	V;IND;PST;HAB;INTR;POS;NOM(1,PL)		doğrar mıydık		doğramayacak mıyd
+nefes aldırmak	V;NEC;PST;NEG;DECL;NOM(3,SG)		nefes aldırmamalıydı		nefes aldırmayacak
+Çin dağ kedisi	N;NOM(SG)		Çin dağ kedisi		Çin dağ kedisin
+mantık	N;GEN(SG;PSS(1,PL))		mantığımızın		mantıklar
+dindarlık	N;NOM(SG;PSS(3,SG))		dindarlığı		dindarlıklarların
+yönetim	N;LOC(SG;PSS(2,PL))		yönetiminizde		yönetimiziniz
+yoldurtmak	V;NFIN		yoldurtmak		yoldurtmayacak ve
+akciğer anjiyografisi	N;DAT(SG)		akciğer anjiyografisine		akciğer anjiyograf
+yoldurtmak	V;INFR;FUT;HAB;NEG;DECL;NOM(1,SG)		yoldurtur olmayacakmışım		yoldurtmayacak mıy
+iftitah	N;GEN(SG)		iftitahın		iftitah mı
+acıktırtmak	V;INFR;FUT;PERF;POS;DECL;NOM(2,PL)		acıktırtmış olacaksınız		acıktırtmış mı
+parlatmak	V;IND;FUT;PRSP;POS;DECL;NOM(1,PL)		parlatacak olacağız		parlatmayacak mıyd
+yönetim	N;GEN(PL)		yönetimlerin		yönetimlerim
+el sıkışmak	V;INFR;PST;PERF;NEG;DECL;NOM(3,PL)		el sıkışmamışlardı		el sıkışmış ol
+acıktırtmak	V;IND;PST;HAB;PROG;INTR;POS;NOM(3,SG)		acıktırtıyor olur muydu		acıktırtmayacak m
+sincap	N;ABL(PL;PSS(2,SG))		sincaplarından		sincaplarında
+ışın	N;ABL(SG)		ışından		ışında
+aygır	N;ABL(PL;PSS(2,PL))		aygırlarınızdan		aygılından
+kipa	N;GEN(SG)		kipanın		kipaya
+kontak lens	N;GEN(PL;PSS(2,SG))		kontak lenslerinin		kontak lensinde
+karşılık	N;LOC(PL;PSS(1,PL))		karşılıklarımızda		karşılığımızd
+hız	N;DAT(SG;PSS(2,PL))		hızınıza		hızın
+parlatmak	V;NEC;PRS;NEG;DECL;NOM(2,PL)		parlatmamelisiniz		parlatmayacaksın
+birleşik kelime	N;ABL(PL)		birleşik kelimelerden		birleşik kelimende
+övmek	V;INFR;FUT;PRSP;INTR;POS;NOM(1,PL)		övecek olacak mıymışız		övmeyacak mış
+gizlenmek	V;IND;PST;HAB;INTR;POS;NOM(3,PL)		gizlenirler miydi		gizlenmeydiler miyd
+karşılık	N;ABL(SG;PSS(3,SG))		karşılığından		karşılıklarında
+göndermek	V;IND;PST;PRSP;INTR;POS;NOM(3,SG)		gönderecek miydi		göndermeyecek miyd
+yoldurtmak	V;INFR;PST;SG;NEG;DECL;NOM(2)		yoldurtmamışmışsın		yoldurtmayacak mıy
+tutmak	V;INFR;FUT;PRSP;POS;DECL;NOM(1,PL)		tutacak olacakmışız		tutmayacak olmayaca
+övmek	V;INFR;PST;PERF;INTR;POS;NOM(1,SG)		övmüş müydüm		övmüyor muydum
+acıktırtmak	V;IMP;LGSPEC2;NEG;DECL;NOM(2,PL)		acıktırtmayınız		acıktırtmışsın
+acıktırtmak	V;IND;PST;POS;DECL;NOM(3,PL)		acıktırttılar		acıktırtmayacak m
+akciğer anjiyografisi	N;DAT(PL)		akciğer anjiyografilerine		akciğer anjiyograf
+yönetim	N;DAT(SG;PSS(2,PL))		yönetiminize		yönetimizizi
+övmek	V;INFR;FUT;HAB;INTR;POS;NOM(2,PL)		över olacak mıymışsınız		övmüyüz olmayaca
+kipa	N;ABL(SG;PSS(3,SG))		kipasından		kipalardı
+yangın	N;ABL(SG;PSS(3,SG))		yangınından		yangında
+gizlenmek	V;INFR;PRS;HAB;INTR;POS;NOM(3,PL)		gizlenirler miymiş		gizlenmiymiş olmay
+övmek	V;IND;PST;PRSP;POS;DECL;NOM(1,SG)		övecektim		övmeyor muydum
+üretmek	V;INFR;PST;NEG;DECL;NOM(1,SG)		üretmemişim		üretmeyecek miyece
+nefes aldırmak	V;INFR;PRS;PROG;NEG;DECL;NOM(2,SG)		nefes aldırmıyormuşsun		nefes aldırmayacak
+sümürmek	V;IND;PST;PRSP;PROG;INTR;POS;NOM(2,SG)		sümürüyor olacak mıydın		sümürmeyacak muyd
+aygır	N;PL;IND;PST;NOM(2,SG)		aygırlardın		aygıyda
+tutmak	V;IND;FUT;INTR;POS;NOM(2,PL)		tutacak mısınız		tutmayacak mıydık
+acı	N;GEN(SG)		acının		acığın
+nefes aldırmak	V;INFR;PRS;PROG;INTR;POS;NOM(1,SG)		nefes aldırıyor muymuşum		nefes aldırmayacak
+yordam	N;ACC(SG;PSS(1,PL))		yordamımızı		yordamızımızda
+yapışmak	V;INFR;PST;PRSP;INTR;POS;NOM(3,PL)		yapışmış olacaklar mıydı		yapışmıydılar
+koca	N;PL;INFR;PST;NOM(3,PL)		kocalarmış		kocaymışlar
+koza	N;ACC(SG;PSS(2,SG))		kozanı		kozaca
+akciğer anjiyografisi	N;NOM(SG)		akciğer anjiyografisi		akciğer akciğer a
+solmak	V;NEC;PST;NEG;INTR;NOM(2,SG)		solmamalı mıydın		solmayacak olmayaca
+osurmak	V;IND;PST;HAB;PROG;INTR;POS;NOM(1,PL)		osuruyor olur muyduk		osurmayacak mıydı
+kontak lens	N;ACC(PL;PSS(2,PL))		kontak lenslerinizi		kontak lensınızda
+yüksek fırın	N;ABL(SG;PSS(2,PL))		yüksek fırınınızdan		yüksek fırınızd
+sümürmek	V;NEC;PST;PROG;INTR;POS;NOM(1,SG)		sümürüyor olmalı mıydım		sümürmeyacak muyd
+yoldurtmak	V;INFR;PST;PERF;NEG;INTR;NOM(3,SG)		yoldurtmamış mıydı		yoldurtmayacak mıy
+yordam	N;ABL(SG;PSS(1,PL))		yordamımızdan		yordammımızdam
+üretmek	V;INFR;PST;PRSP;NEG;DECL;NOM(2,PL)		üretmiş olmayacaktınız		üretmeyecek olmaya
+mantık	N;NOM(SG;PSS(2,PL))		mantığınız		mantığınızda
+şırınga	N;PL;INFR;PST;NOM(3,SG)		şırıngalarmış		şırıngacar
+parlatmak	V;NEC;PRS;NEG;INTR;NOM(3,SG)		parlatmameli mi		parlatmayacak mıyd
+tutmak	V;IND;PST;HAB;NEG;INTR;NOM(1,SG)		tutmaz mıydım		tutmayacak mıydık
+büyümek	V;IND;PRS;PROG;INTR;POS;NOM(1,SG)		büyüyor muyum		büyümeyor muydum
+dindarlık	N;DAT(PL;PSS(2,PL))		dindarlıklarınıza		dindarlığızızı
+Çin dağ kedisi	N;ABL(SG)		Çin dağ kedisi		Çin dağ kedisin
+köpürmek	V;IND;PST;HAB;POS;DECL;NOM(1,PL)		köpürürdük		köpürmüş olmaya
+büyümek	V;NEC;PRS;POS;DECL;NOM(3,SG)		büyümeli		büyümüş olmayac
+övmek	V;INFR;FUT;HAB;POS;DECL;NOM(3,SG)		över olacakmış		övmüş olmayacak
+doğramak	V;IND;PST;HAB;PROG;INTR;POS;NOM(3,PL)		doğruyor olurlar mıydı		doğramaydılar
+kontak lens	N;LOC(SG;PSS(1,PL))		kontak lensimizde		kontak lensimizden
+sorum	N;DAT(PL)		sorumlara		sorumlarınızda
+parlatmak	V;INFR;PRS;PROG;NEG;DECL;NOM(2,SG)		parlatmıyormuşsun		parlatmayacak mıyd
+gizlenmek	V;INFR;FUT;NEG;DECL;NOM(2,SG)		gizlenmeyecekmişsin		gizlenmiş olmuydu
+solmak	V;INFR;PST;PERF;POS;DECL;NOM(1,PL)		solmuştuk		solmayacak mıyız
+aygır	N;SG;INFR;PST;NOM(2,SG)		aygırmışsın		aygıyor muydun
+gizlenmek	V;NEC;PRS;NEG;DECL;NOM(3,PL)		gizlenmemeliler		gizlenmiş olmayaca
+aygır	N;PL;IND;PST;NOM(3,SG)		aygırlardı		aygırda
+birleşik kelime	N;DAT(PL)		birleşik kelimelere		birleşik kelimeyer
+doğramak	V;INFR;FUT;PERF;NEG;INTR;NOM(2,PL)		doğramış olmayacak mısınız		doğramayız mıyı
+ışın	N;LOC(SG;PSS(2,SG))		ışınında		ışında
+kipa	N;GEN(SG;PSS(3,SG))		kipasının		kipaya
+yoldurtmak	V;IND;FUT;POS;DECL;NOM(1,SG)		yoldurtacağım		yoldurtmayacak mıy
+el sıkışmak	V;IND;PST;PERF;POS;DECL;NOM(3,PL)		el sıkıştılardı		el sıkışmıydıl
+sevmek	V;NEC;PST;PROG;POS;DECL;NOM(3,PL)		seviyor olmalılardı		sevmeyor olardılar
+büyümek	V;IND;PRS;PROG;INTR;POS;NOM(1,PL)		büyüyor muyuz		büyümeyor muydum
+aygır	N;SG;INFR;PST;NOM(3,PL)		aygırmışlar		aygırdalar
+dindarlık	N;GEN(PL)		dindarlıkların		dindarlıklarındar
+acıktırtmak	V;IND;FUT;PROG;POS;DECL;NOM(3,PL)		acıktırtıyor olacaklar		acıktırtmayacak m
+koca	N;PL;IND;PST;NOM(2,PL)		kocalardınız		kocaydız
+tıraş olmak	V;IND;PST;PRSP;NEG;DECL;NOM(1,PL)		tıraş olmayacaktık		tıraş olmayacak o
+parlatmak	V;IND;PRS;HAB;INTR;POS;NOM(2,PL)		parlatır mısınız		parlatmayacak mıyd
+dağlı	N;NOM(SG)		dağlı		dağlın
+göndermek	V;IND;PST;POS;DECL;NOM(1,PL)		gönderdik		göndermeyacak mıy
+kipa	N;NOM(PL;PSS(2,PL))		kipalarınız		kipadlarınızdı
+nefes aldırmak	V;IND;PRS;PROG;POS;DECL;NOM(3,PL)		nefes aldırıyorlar		nefes aldırmayacak
+hız	N;GEN(PL;PSS(2,PL))		hızlarınızın		hızınızda
+övmek	V;IND;PST;HAB;NEG;INTR;NOM(3,SG)		övmez miydi		övmeyacak mıydı
+ışın	N;ACC(SG;PSS(2,PL))		ışınınızı		ışınızda
+kontak lens	N;NOM(PL;PSS(3,SG))		kontak lensleri		kontak lensinden
+doğramak	V;NEC;PRS;PROG;NEG;DECL;NOM(2,SG)		doğruyor olmamalısın		doğramışsın
+fotoğraf çekmek	V;IND;PST;PRSP;NEG;INTR;NOM(2,SG)		fotoğraf çekmeyecek miydin		fotoğraf çekmiş 
+sümürmek	V;INFR;FUT;PRSP;INTR;POS;NOM(2,PL)		sümürecek olacak mıymışsınız		sümürmüyor olmay
+parlatmak	V;IND;FUT;PRSP;NEG;INTR;NOM(1,SG)		parlatacak olmayacak mıyım		parlatmayacak mıyd
+lehçe	N;DAT(PL;PSS(1,PL))		lehçelerimize		lehçemezden
+koza	N;ACC(PL)		kozaları		kozaları
+tıraş olmak	V;IND;PRS;PROG;NEG;INTR;NOM(1,PL)		tıraş olmuyor muyuz		tıraş olmayor muy
+acıktırtmak	V;IND;FUT;PRSP;INTR;POS;NOM(1,PL)		acıktırtacak olacak mıyız		acıktırtmayacak m
+sincap	N;ABL(SG;PSS(2,PL))		sincabınızdan		sincaplarınızda
+acıktırtmak	V;IND;PRS;PROG;INTR;POS;NOM(3,SG)		acıktırtıyor mu		acıktırtmayacak m
+akciğer anjiyografisi	N;ABL(PL)		akciğer anjiyografilerinden		akciğer anjiyograf
+gizlenmek	V;IND;PRS;HAB;POS;DECL;NOM(2,SG)		gizlenirsin		gizlenmiyeceksin
+dermek	V;NEC;PRS;POS;DECL;NOM(2,PL)		dermelisiniz		dermeyecekliz
+gizlenmek	V;NEC;PST;PROG;NEG;DECL;NOM(3,SG)		gizleniyor olmamalıydı		gizlenmiş olmayaca
+el sıkışmak	V;IND;PST;PRSP;PROG;INTR;POS;NOM(1,SG)		el sıkışıyor olacak mıydım		el sıkışmıyor m
+doğramak	V;INFR;PST;PRSP;INTR;POS;NOM(2,SG)		doğramış olacak mıydın		doğramış olamaya
+yangın	N;DAT(SG;PSS(2,SG))		yangınına		yangında
+süper kahraman	N;ACC(SG)		süper kahramanı		süper kahramanlar
+sincap	N;NOM(PL;PSS(3,SG))		sincapları		sincaplardı
+el sıkışmak	V;IND;FUT;PRSP;NEG;DECL;NOM(1,SG)		el sıkışacak olmayacağım		el sıkışmıyor m
+tutmak	V;INFR;FUT;PRSP;INTR;POS;NOM(3,PL)		tutacak olacaklar mıymış		tutmayacaklar
+lehçe	N;GEN(PL)		lehçelerin		lehçemeydim
+osurmak	V;INFR;PRS;PROG;INTR;POS;NOM(3,SG)		osuruyor muymuş		osurmayacak muymuyd
+yangın	N;ABL(PL;PSS(2,SG))		yangınlarından		yangında
+osurmak	V;IND;PST;HAB;PROG;NEG;DECL;NOM(3,PL)		osuruyor olmazlardı		osurmayacak olmayac
+şırınga	N;NOM(PL)		şırıngalar		şırıngan
+birleşik kelime	N;GEN(PL)		birleşik kelimelerin		birleşik kelimeyec
+sevmek	V;IND;PST;NEG;DECL;NOM(2,SG)		sevmedin		sevmeydin
+karşılık	N;LOC(SG;PSS(1,PL))		karşılığımızda		karşılığımızd
+sümürmek	V;IND;PST;HAB;NEG;DECL;NOM(3,PL)		sümürmezlerdi		sümürmeyacak olma
+tutmak	V;INFR;FUT;PROG;INTR;POS;NOM(2,SG)		tutuyor olacak mıymışsın		tutmayacak muydu
+gizlenmek	V;NEC;PST;INTR;POS;NOM(1,SG)		gizlenmeli miydim		gizlenmiş muydum
+akciğer anjiyografisi	N;ACC(SG)		akciğer anjiyografisini		akciğer anjiyograf
+fotoğraf çekmek	V;NEC;PST;PROG;POS;DECL;NOM(2,PL)		fotoğraf çekiyor olmalıydınız		fotoğraf çekmiş 
+yangın	N;LOC(PL;PSS(1,PL))		yangınlarımızda		yangımızdamızdam
+parlatmak	V;IND;PST;PRSP;POS;DECL;NOM(1,SG)		parlatacaktım		parlatmayacak mıyd
+sevmek	V;INFR;PRS;HAB;POS;DECL;NOM(2,SG)		severmişsin		sevmiş olmayacak
+lehçe	N;LOC(PL;PSS(3,SG))		lehçelerinde		lehçelerde
+yoldurtmak	V;IND;PST;HAB;PROG;NEG;DECL;NOM(1,PL)		yoldurtuyor olmazdık		yoldurtmayacak mıy
+ışın	N;SG;INFR;PST;NOM(3,SG)		ışınmış		ışın
+üretmek	V;IND;PRS;HAB;POS;DECL;NOM(3,PL)		üretirler		üretmeyeceklar
+övmek	V;IND;PST;HAB;NEG;INTR;NOM(1,SG)		övmez miydim		övmeyacak mıydı
+büyümek	V;IND;FUT;PRSP;NEG;INTR;NOM(2,PL)		büyüyecek olmayacak mısınız		büyümüyor olur m
+acı	N;SG;PRS;NOM(1,PL)		acıyız		acımızdam
+ışın	N;NOM(SG)		ışın		ışın
+el sıkışmak	V;INFR;PST;SG;NEG;DECL;NOM(1)		el sıkışmamışmışım		el sıkışmış ol
+dermek	V;NEC;INFR;PRS;PROG;NEG;DECL;NOM(2,PL)		deriyor olmamalıymışsınız		dermiş olmayacak o
+şırınga	N;DAT(SG)		şırıngaya		şırıngaya
+süper kahraman	N;LOC(PL)		süper kahramanlarda		süper kahramanlar
+nefes aldırmak	V;INFR;PST;PERF;NEG;INTR;NOM(2,PL)		nefes aldırmamış mıydınız		nefes aldırmayacak
+parlatmak	V;IND;PST;HAB;PROG;POS;DECL;NOM(3,PL)		parlatıyor olurlardı		parlatmayacaklardı
+aygır	N;SG;PRS;NOM(3,SG)		aygır		aygıra
+profiterol	N;ABL(PL)		profiterollerden		profiterollerolerol
+şırınga	N;PL;PRS;NOM(2,SG)		şırıngalarsın		şırıngacan
+köpürmek	V;INFR;FUT;POS;DECL;NOM(2,SG)		köpürecekmişsin		köpürmüyor olmay
+dermek	V;IND;PST;HAB;PROG;POS;DECL;NOM(1,SG)		deriyor olurdum		dermeyecektim
+yapışmak	V;NEC;PST;NEG;INTR;NOM(2,PL)		yapışmamalı mıydınız		yapışmıyız olma
+gizlenmek	V;NEC;INFR;PRS;PROG;NEG;INTR;NOM(3,SG)		gizleniyor olmamalı mıymış		gizlenmiş olmayaca
+kipa	N;ABL(SG;PSS(1,PL))		kipamızdan		kipammızdan
+fotoğraf çekmek	V;IND;PST;HAB;NEG;DECL;NOM(3,PL)		fotoğraf çekmezlerdi		fotoğraf çekmiş 
+acı	N;NOM(SG;PSS(2,PL))		acınız		acığında
+el sıkışmak	V;IND;FUT;NEG;DECL;NOM(3,SG)		el sıkışmayacak		el sıkışmayacak 
+yüksek fırın	N;ACC(SG;PSS(3,SG))		yüksek fırınını		yüksek fırına
+fotoğraf çekmek	V;IND;PST;PRSP;PROG;POS;DECL;NOM(1,SG)		fotoğraf çekiyor olacaktım		fotoğraf çekmeyor
+tıraş olmak	V;NEC;INFR;PST;POS;DECL;NOM(2,PL)		tıraş olmalıymışsınız		tıraş olacak olma
+şırınga	N;DAT(PL)		şırıngalara		şırıngalarıngal
+aldırtmak	V;INFR;FUT;NEG;DECL;NOM(3,PL)		aldırtmayacaklarmış		aldırtmayacak mıy
+üretmek	V;NEC;PRS;PROG;NEG;INTR;NOM(2,SG)		üretiyor olmamalı mısın		üretmeyecek miydi
+osurmak	V;INFR;PST;PERF;INTR;POS;NOM(3,PL)		osurmuşlar mıydı		osurmayacaklar
+süper kahraman	N;GEN(SG)		süper kahramanın		süper kahraman mı
+dindarlık	N;GEN(SG;PSS(2,PL))		dindarlığınızın		dindarlığınızda
+iftitah	N;LOC(PL;PSS(2,PL))		iftitahlarınızda		iftitahınızda
+sümürmek	V;IND;PST;NEG;INTR;NOM(2,PL)		sümürmediniz mi		sümürmüyor olmay
+büyümek	V;INFR;FUT;PROG;NEG;DECL;NOM(3,PL)		büyüyor olmayacaklarmış		büyümüyor olacak
+yüksek fırın	N;DAT(PL;PSS(1,PL))		yüksek fırınlarımıza		yüksek fırımızd
+sorum	N;GEN(PL)		sorumların		sorumların
+sorum	N;ABL(SG)		sorumdan		sorumlarında
+solmak	V;IND;PRS;PROG;INTR;POS;NOM(3,PL)		soluyorlar mı		solmayacaklar
+koza	N;DAT(PL)		kozalara		kozaları
+köpürmek	V;NEC;PRS;PROG;POS;DECL;NOM(3,PL)		köpürüyor olmalılar		köpürmüş olmaya
+osurmak	V;INFR;PRS;HAB;INTR;POS;NOM(2,SG)		osurur muymuşsun		osurmayacak muymuyd
+gücenmek	V;IND;PST;PROG;POS;DECL;NOM(2,SG)		güceniyordun		gücenmeyecektim
+göndermek	V;INFR;PST;PERF;POS;DECL;NOM(1,SG)		göndermiştim		göndermiş olmuyec
+kontak lens	N;ABL(PL)		kontak lenslerden		kontak lensinden
+iftitah	N;ACC(SG;PSS(3,SG))		iftitahını		iftitahı
+acıktırtmak	V;IND;FUT;PRSP;NEG;DECL;NOM(2,PL)		acıktırtacak olmayacaksınız		acıktırtmış mı
+dindarlık	N;ACC(PL;PSS(2,PL))		dindarlıklarınızı		dindarlığızızı
+yönetim	N;ACC(SG;PSS(2,PL))		yönetiminizi		yönetimizizi
+mayonez	N;LOC(SG;PSS(2,SG))		mayonezinde		mayonezları
+akciğer anjiyografisi	N;ABL(SG)		akciğer anjiyografisinden		akciğer anjiyograf
+ışın	N;SG;IND;PST;NOM(2,SG)		ışındın		ışında
+osurmak	V;INFR;FUT;HAB;NEG;INTR;NOM(3,PL)		osurur olmayacaklar mıymış		osurmayacak olmayac
+acıktırtmak	V;INFR;PST;PERF;NEG;DECL;NOM(3,PL)		acıktırtmamışlardı		acıktırtmış mı
+ışın	N;SG;INFR;PST;NOM(1,PL)		ışınmışız		ışımız
+süper kahraman	N;ACC(PL)		süper kahramanları		süper kahramanlar
+el sıkışmak	V;IND;PST;PRSP;INTR;POS;NOM(2,SG)		el sıkışacak mıydın		el sıkışmıyor m
+yönetim	N;LOC(SG;PSS(2,SG))		yönetiminde		yönetimine
+gücenmek	V;IND;FUT;PROG;NEG;DECL;NOM(3,SG)		güceniyor olmayacak		gücenmeyecek olmay
+doğramak	V;INFR;FUT;NEG;DECL;NOM(2,SG)		doğramayacakmışsın		doğramayacak mış
+köpürmek	V;IND;PST;PERF;NEG;INTR;NOM(2,SG)		köpürmedi miydin		köpürmüyor muydu
+koza	N;ACC(PL;PSS(3,SG))		kozalarını		kozaları
+sevmek	V;INFR;FUT;PROG;NEG;DECL;NOM(1,SG)		seviyor olmayacakmışım		sevmeyacak muydum
+yüksek fırın	N;GEN(PL)		yüksek fırınların		yüksek fırında
+aldırtmak	V;IND;FUT;PRSP;NEG;INTR;NOM(2,SG)		aldırtacak olmayacak mısın		aldırtmayacak mıy
+sevmek	V;IND;FUT;NEG;DECL;NOM(2,PL)		sevmeyeceksiniz		sevmeyacaksın
+koca	N;GEN(SG;PSS(2,PL))		kocanızın		kocağızda
+büyümek	V;NEC;INFR;PST;NEG;INTR;NOM(3,PL)		büyümemeliler miymiş		büyümeymelerden
+akciğer anjiyografisi	N;GEN(SG)		akciğer anjiyografisinin		akciğer anjiyograf
+büyümek	V;IND;FUT;PRSP;INTR;POS;NOM(3,PL)		büyüyecek olacaklar mı		büyümeyor olarlar
+gücenmek	V;NEC;PRS;PROG;NEG;INTR;NOM(3,SG)		güceniyor olmamalı mı		gücenmiş olmayaca
+mantık	N;ACC(SG;PSS(3,SG))		mantığını		mantıkları
+doğramak	V;NEC;INFR;PST;NEG;DECL;NOM(3,SG)		doğramamalıymış		doğramayacak mış
+yapışmak	V;INFR;FUT;PERF;INTR;POS;NOM(1,PL)		yapışmış olacak mıyız		yapışmış olmaya
+şırınga	N;ACC(SG;PSS(3,SG))		şırıngasını		şırıngala
+tutmak	V;IND;PST;PERF;NEG;DECL;NOM(2,PL)		tutmadıydınız		tutmayacak olmayaca
+mantık	N;LOC(SG;PSS(3,SG))		mantığında		mantıklarında
+yönetim	N;NOM(PL;PSS(1,PL))		yönetimlerimiz		yönetimlerimizden
+üretmek	V;NEC;PRS;INTR;POS;NOM(2,PL)		üretmeli misiniz		üretmeyecek olmaya
+kipa	N;LOC(SG;PSS(2,PL))		kipanızda		kipándızda
+Çin dağ kedisi	N;LOC(PL)		Çin dağ kedi		Çin dağ kedisinde
+tutmak	V;IND;PRS;PROG;NEG;INTR;NOM(2,PL)		tutmuyor musunuz		tutmayacak mıydık
+aldırtmak	V;IND;FUT;PROG;NEG;DECL;NOM(1,SG)		aldırtıyor olmayacağım		aldırtmayacak mıy
+yangın	N;SG;PRS;NOM(2,PL)		yangınsınız		yangınızda
+dermek	V;INFR;PRS;PROG;NEG;DECL;NOM(1,SG)		dermiyormuşum		dermiş olmayacak m
+iftitah	N;NOM(PL;PSS(1,PL))		iftitahlarımız		iftitahlarımızda
+sorum	N;NOM(SG)		sorum		sorumya
+birleşik kelime	N;NOM(PL)		birleşik kelimeler		birleşik kelimeyec
+nefes aldırmak	V;NEC;PRS;PROG;NEG;DECL;NOM(1,PL)		nefes aldırıyor olmamalıyız		nefes aldırmış o
+nefes aldırmak	V;INFR;FUT;PRSP;NEG;INTR;NOM(2,SG)		nefes aldıracak olmayacak mıymışsın		nefes aldırmayacak
+yordam	N;GEN(SG)		yordamın		yordam nordam mı
+kipa	N;NOM(PL)		kipalar		kipalardı
+dağlı	N;NOM(PL)		dağlılar		dağlımdağlın
+yapışmak	V;INFR;FUT;NEG;INTR;NOM(2,SG)		yapışmayacak mıymışsın		yapışmayacak mı
+solmak	V;IND;PST;PRSP;POS;DECL;NOM(3,PL)		solacaklardı		solmayacaklar
+koza	N;GEN(SG;PSS(1,PL))		kozamızın		kozammızdam
+aygır	N;DAT(PL)		aygırlara		aygırların
+aldırtmak	V;IND;PST;PRSP;PROG;NEG;INTR;NOM(1,PL)		aldırtıyor olmayacak mıydık		aldırtmayacak mıy
+koca	N;PL;INFR;PST;NOM(1,PL)		kocalarmışız		kocamızdız
+solmak	V;INFR;PST;PL;POS;DECL;NOM(2)		solmuşmuşsunuz		solmayacak olmayaca
+yapışmak	V;INFR;PST;PRSP;INTR;POS;NOM(1,PL)		yapışmış olacak mıydık		yapışmıyor muymu
+yüksek fırın	N;ACC(PL)		yüksek fırınları		yüksek fırınlar
+fotoğraf çekmek	V;IND;PST;PERF;NEG;INTR;NOM(3,PL)		fotoğraf çekmediler miydi		fotoğraf çekmiş 
+kontak lens	N;GEN(SG;PSS(2,SG))		kontak lensinin		kontak lensin
+Çin dağ kedisi	N;GEN(SG)		Çin dağ kedisi		Çin dağ kedisimin
+sümürmek	V;IND;FUT;POS;DECL;NOM(2,SG)		sümüreceksin		sümürmeyacak olma
+sincap	N;GEN(PL)		sincapların		sincapların
+üretmek	V;NEC;INFR;PRS;PROG;INTR;POS;NOM(2,SG)		üretiyor olmalı mıymışsın		üretmiş olmayacak
+hız	N;ACC(PL;PSS(2,PL))		hızlarınızı		hızınızda
+övmek	V;INFR;FUT;HAB;NEG;DECL;NOM(3,PL)		över olmayacaklarmış		övmeyacak olmayaca
+yoldurtmak	V;INFR;PRS;HAB;NEG;DECL;NOM(2,SG)		yoldurtmazmışsın		yoldurtmayacak mıy
+yüksek fırın	N;GEN(SG;PSS(3,SG))		yüksek fırınının		yüksek fırında
+kipa	N;ABL(SG)		kipadan		kipayacan
+göndermek	V;IND;PST;PERF;POS;DECL;NOM(2,PL)		gönderdiydiniz		göndermeyecektim
+nefes aldırmak	V;INFR;PST;PERF;POS;DECL;NOM(2,SG)		nefes aldırmıştın		nefes aldırmayacak
+yönetim	N;NOM(SG)		yönetim		yönetimine
+hız	N;DAT(SG;PSS(3,SG))		hızına		hızı
+kontak lens	N;GEN(SG;PSS(1,PL))		kontak lensimizin		kontak lensimizden
+sevmek	V;NEC;PST;PROG;NEG;INTR;NOM(3,PL)		seviyor olmamalılar mıydı		sevmeyacalar
+doğramak	V;INFR;FUT;PERF;POS;DECL;NOM(3,PL)		doğramış olacaklar		doğramayış olama
+parlatmak	V;INFR;PRS;PROG;NEG;DECL;NOM(1,SG)		parlatmıyormuşum		parlatmayacak mıyd
+acı	N;ABL(PL;PSS(3,SG))		acılarından		acında
+kipa	N;NOM(SG;PSS(3,SG))		kipası		kipaya
+osurmak	V;NEC;PST;PROG;POS;DECL;NOM(3,PL)		osuruyor olmalılardı		osurmayacaklar
+göndermek	V;INFR;PST;NEG;DECL;NOM(3,SG)		göndermemiş		göndermiyecek olme
+ışın	N;ABL(PL;PSS(2,PL))		ışınlarınızdan		ışınızda
+mantık	N;ABL(SG;PSS(3,SG))		mantığından		mantıklarında
+övmek	V;NEC;INFR;PRS;PROG;NEG;DECL;NOM(2,SG)		övüyor olmamalıymışsın		övmüyor olmayacak
+koza	N;NOM(SG;PSS(2,PL))		kozanız		kozandaz
+acı	N;GEN(PL;PSS(3,SG))		acılarının		acında
+profiterol	N;LOC(SG)		profiterolde		profiterolarolar
+aldırtmak	V;IND;PST;HAB;NEG;DECL;NOM(1,SG)		aldırtmazdım		aldırtmayacak mıy
+sincap	N;ABL(SG)		sincaptan		sincaplarında
+hız	N;ACC(PL;PSS(1,PL))		hızlarımızı		hızımızdan
+göndermek	V;IND;PRS;PROG;POS;DECL;NOM(2,PL)		gönderiyorsunuz		göndermeyecek olme
+koca	N;NOM(SG;PSS(2,PL))		kocanız		kocağınızda
+ışın	N;PL;IND;PST;NOM(1,PL)		ışınlardık		ışımız mış
+acıktırtmak	V;IND;PST;PERF;INTR;POS;NOM(2,SG)		acıktırttı mıydın		acıktırtmıymış
+gizlenmek	V;IND;FUT;POS;DECL;NOM(3,SG)		gizlenecek		gizlenmiş olmayaca
+aldırtmak	V;NEC;INFR;PRS;PROG;NEG;INTR;NOM(1,SG)		aldırtıyor olmamalı mıymışım		aldırtmaymış mı
+kontak lens	N;DAT(SG;PSS(2,PL))		kontak lensinize		kontak lensinizi
+mayonez	N;GEN(PL)		mayonezlerin		mayonezları
+acıktırtmak	V;IND;PST;HAB;PROG;NEG;INTR;NOM(2,SG)		acıktırtıyor olmaz mıydın		acıktırtmış mı
+tutmak	V;IND;PRS;HAB;POS;DECL;NOM(3,SG)		tutar		tutmayacak olmayaca
+sümürmek	V;INFR;PST;NEG;INTR;NOM(2,PL)		sümürmemiş misiniz		sümürmüyür miya
+solmak	V;INFR;FUT;POS;DECL;NOM(1,SG)		solacakmışım		solmayacak mıydı
+yönetim	N;ABL(PL;PSS(2,SG))		yönetimlerinden		yönetimlerinde
+koca	N;SG;INFR;PST;NOM(3,PL)		kocaymışlar		kocalardılar
+mantık	N;LOC(PL;PSS(3,SG))		mantıklarında		mantıklarında
+mayonez	N;ABL(PL;PSS(2,SG))		mayonezlerinden		mayonezlerde
+aygır	N;DAT(PL;PSS(2,SG))		aygırlarına		aygılarında
+kontak lens	N;GEN(SG;PSS(2,PL))		kontak lensinizin		kontak lensiniz
+sümürmek	V;IND;FUT;NEG;DECL;NOM(3,PL)		sümürmeyecekler		sümürmeyacak olma
+hız	N;DAT(SG;PSS(2,SG))		hızına		hızı
+doğramak	V;IND;PST;PROG;INTR;POS;NOM(1,SG)		doğruyor muydum		doğramaydık
+şırınga	N;DAT(SG;PSS(2,SG))		şırıngana		şırınganda
+mantık	N;DAT(SG;PSS(2,SG))		mantığına		mantığında
+övmek	V;INFR;PST;POS;DECL;NOM(2,SG)		övmüşsün		övmüyor olmayacak
+nefes aldırmak	V;IND;FUT;INTR;POS;NOM(1,PL)		nefes aldıracak mıyız		nefes aldırmayacak
+gizlenmek	V;NEC;PRS;PROG;NEG;INTR;NOM(2,SG)		gizleniyor olmamalı mısın		gizlenmiş olmuydu
+büyümek	V;INFR;PRS;HAB;POS;DECL;NOM(3,PL)		büyürlermiş		büyümüyor muydun
+kontak lens	N;ACC(SG)		kontak lensi		kontak lensini
+mantık	N;ABL(SG;PSS(1,PL))		mantığımızdan		mantığımızdan
+koca	N;ABL(SG)		kocadan		kocayanda
+fotoğraf çekmek	V;IND;PRS;PROG;NEG;INTR;NOM(1,PL)		fotoğraf çekmiyor muyuz		fotoğraf çekmeyor
+dindarlık	N;GEN(SG;PSS(2,SG))		dindarlığının		dindarlık mında
+profiterol	N;LOC(PL)		profiterollerde		profiterollerolorda
+iftitah	N;NOM(PL;PSS(2,PL))		iftitahlarınız		iftitahınızda
+övmek	V;IND;FUT;NEG;DECL;NOM(3,SG)		övmeyecek		övmeyacak olmayaca
+iftitah	N;ABL(SG)		iftitahtan		iftitahın
+yordam	N;DAT(SG;PSS(2,PL))		yordamınıza		yordamınızda
+sevmek	V;INFR;PST;PL;POS;DECL;NOM(1)		sevmişmişiz		sevmeyacak muydum
+şırınga	N;ACC(PL;PSS(2,PL))		şırıngalarınızı		şırıngadızı
+aygır	N;PL;INFR;PST;NOM(2,SG)		aygırlarmışsın		aygıyor olar
+lehçe	N;ABL(PL;PSS(1,PL))		lehçelerimizden		lehçemizden
+mayonez	N;LOC(SG;PSS(3,SG))		mayonezinde		mayonezları
+sevmek	V;IND;PST;PRSP;INTR;POS;NOM(3,PL)		sevecekler miydi		sevmeyder lar
+iftitah	N;DAT(PL;PSS(3,SG))		iftitahlarına		iftitahına
+koca	N;SG;INFR;PST;NOM(2,SG)		kocaymışsın		kocaymuşsun
+osurmak	V;IND;PST;PERF;INTR;POS;NOM(2,SG)		osurdu muydun		osurmayacak muydu
+mantık	N;NOM(PL)		mantıklar		mantıklar
+büyümek	V;IND;PRS;PROG;INTR;POS;NOM(2,SG)		büyüyor musun		büyüyor muydu
+kipa	N;NOM(SG;PSS(2,PL))		kipanız		kipandızda
+dindarlık	N;GEN(SG;PSS(1,PL))		dindarlığımızın		dindarlığımızda
+solmak	V;IND;PST;POS;DECL;NOM(3,SG)		soldu		solmayacak olmayaca
+tutmak	V;INFR;FUT;POS;DECL;NOM(2,SG)		tutacakmışsın		tutmayacaksın
+osurmak	V;IND;PST;PRSP;PROG;POS;DECL;NOM(1,SG)		osuruyor olacaktım		osurmayor muydum
+yordam	N;GEN(PL)		yordamların		yordamlarımızda
+parlatmak	V;IND;FUT;INTR;POS;NOM(2,PL)		parlatacak mısınız		parlatmayacak mıyd
+büyümek	V;IND;PST;POS;DECL;NOM(1,SG)		büyüdüm		büyümeyor muydum
+dindarlık	N;LOC(SG;PSS(2,PL))		dindarlığınızda		dindarlığınızda
+sümürmek	V;IND;FUT;PROG;NEG;DECL;NOM(2,SG)		sümürüyor olmayacaksın		sümürmeyacak olma
+yangın	N;PL;PRS;NOM(2,PL)		yangınlarsınız		yangındai
+karşılık	N;DAT(PL;PSS(1,PL))		karşılıklarımıza		karşılığımızd
+büyümek	V;IND;PST;PROG;NEG;DECL;NOM(2,PL)		büyümüyordunuz		büyümeyecek olmay
+doğramak	V;IND;PST;PRSP;INTR;POS;NOM(3,PL)		doğrayacaklar mıydı		doğramaydılar
+sincap	N;ACC(PL;PSS(1,PL))		sincaplarımızı		sincaplarımızı
+dindarlık	N;LOC(PL;PSS(1,PL))		dindarlıklarımızda		dindarlığımızda
+akciğer anjiyografisi	N;LOC(SG)		akciğer anjiyografisinde		akciğer anjiyograf
+büyümek	V;INFR;PST;PERF;NEG;INTR;NOM(2,SG)		büyümemiş miydin		büyüyor olmayacak
+yangın	N;ABL(PL;PSS(2,PL))		yangınlarınızdan		yangınızda
+üretmek	V;IND;FUT;PROG;INTR;POS;NOM(1,SG)		üretiyor olacak mıyım		üretmeyecek miydum
+yapışmak	V;IND;FUT;PROG;INTR;POS;NOM(2,PL)		yapışıyor olacak mısınız		yapışmıyor olmay
+koca	N;LOC(SG;PSS(2,PL))		kocanızda		kocándon
+lehçe	N;NOM(SG;PSS(2,PL))		lehçeniz		lehçendez
+gücenmek	V;INFR;FUT;PERF;NEG;INTR;NOM(2,PL)		gücenmiş olmayacak mısınız		gücenmiş olmayaca
+yönetim	N;NOM(SG;PSS(2,PL))		yönetiminiz		yönetimizin
+fotoğraf çekmek	V;INFR;PST;PERF;POS;DECL;NOM(1,PL)		fotoğraf çekmiştik		fotoğraf çekmiş 
+yordam	N;ABL(PL;PSS(2,SG))		yordamlarından		yordamlarında
+sümürmek	V;IND;PST;PERF;NEG;DECL;NOM(1,SG)		sümürmediydim		sümürmüyor muydu
+solmak	V;INFR;FUT;PRSP;NEG;INTR;NOM(1,SG)		solacak olmayacak mıymışım		solmayacak mıydı
+sincap	N;GEN(SG;PSS(2,PL))		sincabınızın		sincaplarınızda
+yordam	N;LOC(SG;PSS(2,PL))		yordamınızda		yordamınızda
+acı	N;LOC(SG;PSS(2,SG))		acında		acında
+aygır	N;ACC(SG;PSS(3,SG))		aygırını		aygıran
+gücenmek	V;INFR;FUT;HAB;POS;DECL;NOM(3,PL)		gücenir olacaklarmış		gücenmiş olmayaca
+dermek	V;NEC;INFR;PST;NEG;DECL;NOM(3,SG)		dermemeliymiş		dermiydekmiş olmay
+el sıkışmak	V;NEC;INFR;PST;NEG;DECL;NOM(2,PL)		el sıkışmamalıymışsınız		el sıkışmıyız
+koca	N;DAT(SG)		kocaya		kocaya
+sincap	N;GEN(PL;PSS(1,PL))		sincaplarımızın		sincaplardız
+göndermek	V;NEC;PST;POS;DECL;NOM(3,PL)		göndermelilerdi		göndermiş olmayec
+doğramak	V;IND;FUT;PROG;NEG;DECL;NOM(1,SG)		doğruyor olmayacağım		doğramayacak mıyd
+yordam	N;GEN(SG;PSS(3,SG))		yordamının		yordam muydam mı
+parlatmak	V;IND;PST;PROG;NEG;INTR;NOM(1,PL)		parlatmıyor muyduk		parlatmayacak mıyd
+el sıkışmak	V;INFR;PST;PERF;INTR;POS;NOM(1,PL)		el sıkışmış mıydık		el sıkışmış m
+fotoğraf çekmek	V;INFR;FUT;PRSP;NEG;INTR;NOM(3,SG)		fotoğraf çekecek olmayacak mıymış		fotoğraf çekmiş 
+yüksek fırın	N;NOM(PL;PSS(2,SG))		yüksek fırınların		yüksek fırında
+yönetim	N;NOM(SG;PSS(1,PL))		yönetimimiz		yönetimizimizden
+şırınga	N;PL;PRS;NOM(1,PL)		şırıngalarız		şırıngamızdam
+övmek	V;NEC;PRS;PROG;NEG;DECL;NOM(3,SG)		övüyor olmamalı		övmüyor olmayacak
+lehçe	N;LOC(PL)		lehçelerde		lehçelerden
+hız	N;DAT(PL)		hızlara		hızlarız
+iftitah	N;ABL(SG;PSS(3,SG))		iftitahından		iftitahın
+yönetim	N;ABL(SG;PSS(2,PL))		yönetiminizden		yönetimiziniz
+kipa	N;ACC(PL;PSS(1,PL))		kipalarımızı		kipazlarımızı
+ışın	N;DAT(SG;PSS(2,SG))		ışınına		ışını
+aldırtmak	V;INFR;FUT;PERF;NEG;DECL;NOM(3,PL)		aldırtmış olmayacaklar		aldırtmayacak mıy
+yordam	N;DAT(PL;PSS(2,PL))		yordamlarınıza		yordamlarızı
+aldırtmak	V;NEC;PRS;POS;DECL;NOM(1,SG)		aldırtmeliyim		aldırtmayacak mıy
+osurmak	V;IND;PST;PRSP;PROG;POS;DECL;NOM(3,SG)		osuruyor olacaktı		osurmayacak olmayac
+birleşik kelime	N;ACC(SG)		birleşik kelimeyi		birleşik kelimeyer
+fotoğraf çekmek	V;NEC;INFR;PST;POS;DECL;NOM(3,SG)		fotoğraf çekmeliymiş		fotoğraf çekmiş 
+büyümek	V;IND;FUT;PROG;NEG;INTR;NOM(1,PL)		büyüyor olmayacak mıyız		büyümeyor muydum
+gizlenmek	V;IND;PRS;HAB;INTR;POS;NOM(3,SG)		gizlenir mi		gizlenmiydi
+köpürmek	V;INFR;PRS;HAB;NEG;INTR;NOM(2,SG)		köpürmez miymişsin		köpürmüyor muymu
+dağlı	N;DAT(SG)		dağlıya		dağlında
+övmek	V;IND;PRS;PROG;POS;DECL;NOM(1,PL)		övüyoruz		övmeyor muydum
+karşılık	N;ACC(SG;PSS(2,SG))		karşılığını		karşılıkında
+osurmak	V;IND;FUT;PRSP;INTR;POS;NOM(3,SG)		osuracak olacak mı		osurmayacak olmayac
+gizlenmek	V;NEC;PST;PROG;NEG;INTR;NOM(1,PL)		gizleniyor olmamalı mıydık		gizlenmiş olmayaca
+büyümek	V;NEC;PST;POS;DECL;NOM(1,PL)		büyümeliydik		büyümüş olmayac
+acı	N;PL;PRS;NOM(1,SG)		acılarım		acımızda
+osurmak	V;IND;FUT;PRSP;NEG;INTR;NOM(2,SG)		osuracak olmayacak mısın		osurmayacak olmayac
+göndermek	V;IND;PST;PERF;NEG;INTR;NOM(1,PL)		göndermedi miydik		göndermeyecek miyd
+yangın	N;PL;IND;PST;NOM(2,PL)		yangınlardınız		yangındais
+göndermek	V;INFR;FUT;HAB;POS;DECL;NOM(3,SG)		gönderir olacakmış		göndermiyacak olmu
+osurmak	V;INFR;FUT;PERF;NEG;DECL;NOM(2,SG)		osurmuş olmayacaksın		osurmayacak osurmay
+büyümek	V;NEC;PRS;PROG;INTR;POS;NOM(2,SG)		büyüyor olmalı mısın		büyüyor olmayacak
+fotoğraf çekmek	V;IND;PST;PRSP;POS;DECL;NOM(3,PL)		fotoğraf çekeceklerdi		fotoğraf çekmeydi
+el sıkışmak	V;NEC;INFR;PRS;PROG;NEG;INTR;NOM(1,PL)		el sıkışıyor olmamalı mıymışız		el sıkışmıyor m
+kontak lens	N;GEN(PL)		kontak lenslerin		kontak lensin
+yapışmak	V;IND;PST;PROG;INTR;POS;NOM(2,PL)		yapışıyor muydunuz		yapışmıydık
+gücenmek	V;NEC;PST;PROG;INTR;POS;NOM(3,SG)		güceniyor olmalı mıydı		gücenmiş olmayaca
+el sıkışmak	V;IND;PST;PRSP;PROG;POS;DECL;NOM(1,SG)		el sıkışıyor olacaktım		el sıkışmıyor m
+övmek	V;INFR;PST;PL;INTR;POS;NOM(1)		övmüş müymüşüz		övmeyor muydum
+iftitah	N;NOM(SG;PSS(2,SG))		iftitahın		iftitahın
+yüksek fırın	N;GEN(PL;PSS(2,SG))		yüksek fırınlarının		yüksek fırında
+mayonez	N;DAT(SG)		mayoneze		mayonez mayonezle
+koca	N;PL;IND;PST;NOM(3,SG)		kocalardı		kocaydı
+gizlenmek	V;NEC;PST;PROG;NEG;INTR;NOM(1,SG)		gizleniyor olmamalı mıydım		gizlenmiş olmayaca
+tıraş olmak	V;INFR;FUT;PRSP;NEG;INTR;NOM(2,SG)		tıraş olacak olmayacak mıymışsın		tıraş olmayacak o
+doğramak	V;INFR;PST;NEG;INTR;NOM(3,PL)		doğramamışlar mı		doğramaymış olam
+dermek	V;INFR;PST;NEG;INTR;NOM(1,PL)		dermemiş miyiz		dermeyacak muymuş 
+el sıkışmak	V;INFR;FUT;HAB;POS;DECL;NOM(3,PL)		el sıkışır olacaklarmış		el sıkışmış ol
+parlatmak	V;INFR;PST;POS;DECL;NOM(1,SG)		parlatmışım		parlatmayacak mıyd
+nefes aldırmak	V;NEC;PST;INTR;POS;NOM(3,SG)		nefes aldırmalı mıydı		nefes aldırmayacak
+acıktırtmak	V;INFR;FUT;NEG;INTR;NOM(3,PL)		acıktırtmayacaklar mıymış		acıktırtmayacak m
+tıraş olmak	V;NEC;INFR;PST;INTR;POS;NOM(3,PL)		tıraş olmalılar mıymış		tıraş olacaklar
+övmek	V;INFR;PRS;HAB;NEG;INTR;NOM(1,SG)		övmez miymişim		övmüyor muymuşsu
+dindarlık	N;NOM(SG;PSS(1,PL))		dindarlığımız		dindarlığımızda
+solmak	V;NEC;PRS;PROG;NEG;INTR;NOM(3,SG)		soluyor olmamalı mı		solmayacak mı
+osurmak	V;NEC;INFR;PRS;PROG;INTR;POS;NOM(3,PL)		osuruyor olmalılar mıymış		osurmayacaklar
+mayonez	N;NOM(SG;PSS(2,SG))		mayonezin		mayonez miydi
+sevmek	V;IND;FUT;PROG;NEG;DECL;NOM(1,SG)		seviyor olmayacağım		sevmeyor olmayacak
+yordam	N;NOM(PL)		yordamlar		yordamlardımızda
+lehçe	N;LOC(SG;PSS(2,PL))		lehçenizde		lehçenden
+lehçe	N;LOC(PL;PSS(1,PL))		lehçelerimizde		lehçemizden
+süper kahraman	N;ABL(PL)		süper kahramanlardan		süper kahramanlar
+sincap	N;LOC(PL;PSS(3,SG))		sincaplarında		sincaplarında
+Çin dağ kedisi	N;NOM(PL)		Çin dağ kedi		Çin dağ kedisin
+mantık	N;ACC(SG)		mantığı		mantıkları
+lehçe	N;NOM(PL;PSS(3,SG))		lehçeleri		lehçelerde
+el sıkışmak	V;NEC;PST;PROG;NEG;DECL;NOM(2,PL)		el sıkışıyor olmamalıydınız		el sıkışmış ol
+süper kahraman	N;GEN(PL)		süper kahramanların		süper kahramanlar
+göndermek	V;INFR;FUT;NEG;DECL;NOM(1,PL)		göndermeyecekmişiz		göndermiş olmayec
+acıktırtmak	V;INFR;PST;PRSP;POS;DECL;NOM(2,SG)		acıktırtmış olacaktın		acıktırtmışsın
+şırınga	N;DAT(PL;PSS(2,SG))		şırıngalarına		şırıngala
+yordam	N;ACC(PL;PSS(2,PL))		yordamlarınızı		yordamlarızı
+övmek	V;INFR;PRS;PROG;NEG;DECL;NOM(2,PL)		övmüyormuşsunuz		övmüyüz olmayaca
+koca	N;ABL(PL;PSS(1,PL))		kocalarımızdan		kocamızdamızdamı
+yordam	N;DAT(SG;PSS(3,SG))		yordamına		yordamların
+iftitah	N;ACC(PL;PSS(3,SG))		iftitahlarını		iftitahına
+aygır	N;NOM(PL)		aygırlar		aygırdan
+acı	N;ABL(SG;PSS(2,PL))		acınızdan		acığından
+süper kahraman	N;NOM(PL)		süper kahramanlar		süper kahramanlar
+profiterol	N;NOM(PL)		profiteroller		profiteroller
+köpürmek	V;NEC;PRS;POS;DECL;NOM(3,PL)		köpürmeliler		köpürmüş olmaya
+yapışmak	V;NEC;PST;PROG;POS;DECL;NOM(3,SG)		yapışıyor olmalıydı		yapışmış olmaya
+yönetim	N;ABL(SG)		yönetimden		yönetimine
+yapışmak	V;IND;FUT;PRSP;NEG;INTR;NOM(2,PL)		yapışacak olmayacak mısınız		yapışmıyor olmay
+sevmek	V;INFR;FUT;INTR;POS;NOM(2,PL)		sevecek miymişsiniz		sevmeyim miymişsun
+yüksek fırın	N;SG;PRS;NOM(2,SG)		yüksek fırınsın		yüksek fırın
+üretmek	V;IND;FUT;POS;DECL;NOM(2,PL)		üreteceksiniz		üretmeyecektiz
+övmek	V;NEC;INFR;PRS;PROG;POS;DECL;NOM(3,SG)		övüyor olmalıymış		övmüyor olmayacak
+övmek	V;INFR;FUT;POS;DECL;NOM(3,PL)		öveceklermiş		övmeyacaklar
+mantık	N;NOM(SG;PSS(3,SG))		mantığı		mantıklar
+dindarlık	N;LOC(SG;PSS(3,SG))		dindarlığında		dindarlıklarına
+iftitah	N;GEN(PL;PSS(1,PL))		iftitahlarımızın		iftitahlarımızdam
+şırınga	N;ABL(PL;PSS(1,PL))		şırıngalarımızdan		şırıngımızdan
+acıktırtmak	V;IND;PST;PERF;NEG;INTR;NOM(1,PL)		acıktırtmadı mıydık		acıktırtmış mı
+parlatmak	V;NEC;PRS;POS;DECL;NOM(2,SG)		parlatmelisin		parlatmayacaksın
+şırınga	N;LOC(PL;PSS(3,SG))		şırıngalarında		şırıngala
+gücenmek	V;IMP;NEG;DECL;NOM(2,SG)		gücenme		gücenmiş olmayaca
+sorum	N;ACC(PL)		sorumları		sorumlarınızı
+tutmak	V;INFR;PST;PERF;INTR;POS;NOM(1,PL)		tutmuş muyduk		tutmayacak mıyzım
+tutmak	V;INFR;PRS;HAB;NEG;DECL;NOM(2,SG)		tutmazmışsın		tutmayacak olmayaca
+solmak	V;IND;PST;PROG;NEG;INTR;NOM(2,SG)		solmuyor muydun		solmayacak olmayaca
+osurmak	V;INFR;PST;INTR;POS;NOM(3,PL)		osurmuşlar mı		osurmayacaklar
+koza	N;LOC(PL;PSS(2,PL))		kozalarınızda		kozalarınızda
+göndermek	V;INFR;FUT;PROG;NEG;INTR;NOM(3,PL)		gönderiyor olmayacaklar mıymış		göndermiyor olar
+hız	N;NOM(SG;PSS(1,PL))		hızımız		hızdan
+birleşik kelime	N;LOC(PL)		birleşik kelimelerde		birleşik kelimeyer
+yoldurtmak	V;IND;PST;PROG;NEG;DECL;NOM(1,SG)		yoldurtmuyordum		yoldurtmayacak mıy
+profiterol	N;GEN(PL)		profiterollerin		profiterollerolor
+acı	N;LOC(PL;PSS(2,PL))		acılarınızda		acığından
+acıktırtmak	V;NEC;PST;NEG;INTR;NOM(1,SG)		acıktırtmamalı mıydım		acıktırtmış mı
+koza	N;ACC(SG)		kozayı		kozarı
+yangın	N;PL;IND;PST;NOM(2,SG)		yangınlardın		yangında
+kipa	N;NOM(PL;PSS(2,SG))		kipaların		kipalardı
+Çin dağ kedisi	N;DAT(SG)		Çin dağ kedisi		Çin dağ kedisin
+mayonez	N;ABL(PL;PSS(3,SG))		mayonezlerinden		mayonezlerde
+yangın	N;DAT(SG;PSS(1,PL))		yangınımıza		yangımızda
+gücenmek	V;IND;PST;PRSP;INTR;POS;NOM(3,PL)		gücenecekler miydi		gücenmeydiller
+üretmek	V;INFR;FUT;PROG;POS;DECL;NOM(1,SG)		üretiyor olacakmışım		üretmeyecek miyaca
+iftitah	N;GEN(SG;PSS(2,SG))		iftitahının		iftitahı
+dermek	V;IND;PST;PROG;NEG;DECL;NOM(3,SG)		dermiyordu		dermeyecek olmayaca
+hız	N;GEN(SG;PSS(3,SG))		hızının		hız sin
+dağlı	N;GEN(PL)		dağlıların		dağlımızda
+göndermek	V;IND;PST;PERF;INTR;POS;NOM(2,PL)		gönderdi miydiniz		göndermeydek miyde
+karşılık	N;ACC(SG;PSS(3,SG))		karşılığını		karşılıkları
+hız	N;ABL(SG;PSS(1,PL))		hızımızdan		hızdan
+yönetim	N;LOC(PL;PSS(1,PL))		yönetimlerimizde		yönetimlerimizden
+ışın	N;LOC(PL)		ışınlarda		ışından
+koca	N;SG;INFR;PST;NOM(1,PL)		kocaymışız		kocammış
+sincap	N;ACC(SG;PSS(2,SG))		sincabını		sincaplarında
+doğramak	V;NEC;INFR;PST;INTR;POS;NOM(3,PL)		doğramalılar mıymış		doğramaymış olam
+Çin dağ kedisi	N;ACC(PL)		Çin dağ kedi		Çin dağ kedisiniz
+aldırtmak	V;INFR;FUT;HAB;NEG;DECL;NOM(3,SG)		aldırtır olmayacakmış		aldırtmayacak mıy
+yordam	N;NOM(PL;PSS(3,SG))		yordamları		yordamların
+nefes aldırmak	V;IND;PRS;PROG;INTR;POS;NOM(3,PL)		nefes aldırıyorlar mı		nefes aldırmayacak
+kontak lens	N;ACC(SG;PSS(2,SG))		kontak lensini		kontak lensini
+sincap	N;DAT(SG;PSS(2,PL))		sincabınıza		sincaplarınızda
+yüksek fırın	N;NOM(SG;PSS(2,PL))		yüksek fırınınız		yüksek fırınızd
+profiterol	N;ABL(SG)		profiterolden		profiteroleroları
+övmek	V;INFR;PRS;PROG;INTR;POS;NOM(3,PL)		övüyorlar mıymış		övmeyor ollar
+aygır	N;SG;INFR;PST;NOM(2,PL)		aygırmışsınız		aygızız
+dermek	V;IND;PST;PERF;INTR;POS;NOM(2,SG)		derdi miydin		dermiyor muydu
+lehçe	N;GEN(SG;PSS(1,PL))		lehçemizin		lehçemizden
+gücenmek	V;INFR;PST;POS;DECL;NOM(2,SG)		gücenmişsin		gücenmiş olmayaca
+solmak	V;INFR;FUT;PROG;NEG;INTR;NOM(1,SG)		soluyor olmayacak mıymışım		solmayacak mıyor
+dermek	V;IND;PRS;HAB;POS;DECL;NOM(1,SG)		dererim		dermeyecek miydim
+yönetim	N;LOC(PL;PSS(2,PL))		yönetimlerinizde		yönetimlerinden
+osurmak	V;IND;PST;PROG;POS;DECL;NOM(1,PL)		osuruyorduk		osurmayacak mıydı
+sümürmek	V;INFR;PST;POS;DECL;NOM(2,SG)		sümürmüşsün		sümürmüyor olmay
+gücenmek	V;IND;PST;HAB;NEG;DECL;NOM(2,PL)		gücenmezdiniz		gücenmeyecektim
+övmek	V;IND;PST;PRSP;INTR;POS;NOM(1,SG)		övecek miydim		övmeyor muydum
+yoldurtmak	V;IND;PST;PERF;POS;DECL;NOM(2,PL)		yoldurttuydunuz		yoldurtmayacak oltm
+gücenmek	V;IND;PST;NEG;INTR;NOM(1,PL)		gücenmedik mi		gücenmeyacak mıyd
+koza	N;GEN(SG;PSS(2,SG))		kozanın		kozacaksın
+sevmek	V;INFR;FUT;HAB;NEG;DECL;NOM(3,PL)		sever olmayacaklarmış		sevmeyacaklar
+yönetim	N;ACC(PL;PSS(2,PL))		yönetimlerinizi		yönetimlerizi
+dindarlık	N;LOC(PL;PSS(3,SG))		dindarlıklarında		dindarlıklarında
+kipa	N;DAT(SG;PSS(2,PL))		kipanıza		kipağızı
+sorum	N;ACC(SG)		sorumu		sorumları
+acı	N;ABL(SG;PSS(3,SG))		acısından		acında
+doğramak	V;NEC;INFR;PRS;PROG;NEG;INTR;NOM(3,PL)		doğruyor olmamalılar mıymış		doğramaymış olam
+yoldurtmak	V;NEC;PRS;POS;DECL;NOM(3,PL)		yoldurtmeliler		yoldurtmayacakları
+solmak	V;IND;PST;PRSP;NEG;INTR;NOM(3,PL)		solmayacaklar mıydı		solmayacaklar
+kipa	N;ABL(SG;PSS(2,PL))		kipanızdan		kipándonda
+ışın	N;ABL(SG;PSS(3,SG))		ışınından		ışında
+akciğer anjiyografisi	N;ACC(PL)		akciğer anjiyografilerini		akciğer anjiyograf
+hız	N;ACC(SG;PSS(2,PL))		hızınızı		hızınızda
+tutmak	V;INFR;PST;SG;NEG;INTR;NOM(2)		tutmamış mıymışsın		tutmayacak muymuşs
+göndermek	V;IND;FUT;PRSP;NEG;INTR;NOM(3,SG)		gönderecek olmayacak mı		göndermiyor olmayd
+akciğer anjiyografisi	N;GEN(PL)		akciğer anjiyografilerinin		akciğer akciğer a
+tutmak	V;NEC;INFR;PST;NEG;DECL;NOM(1,PL)		tutmamalıymışız		tutmayız mıyız
+lehçe	N;LOC(SG;PSS(3,SG))		lehçesinde		lehçenla
+gücenmek	V;INFR;PRS;HAB;POS;DECL;NOM(3,SG)		gücenirmiş		gücenmiş olmayaca
+kontak lens	N;ABL(PL;PSS(2,SG))		kontak lenslerinden		kontak lensinden
+sümürmek	V;NEC;INFR;PRS;PROG;NEG;INTR;NOM(3,PL)		sümürüyor olmamalılar mıymış		sümürmeyacan
+doğramak	V;NEC;PST;INTR;POS;NOM(1,PL)		doğramalı mıydık		doğramış olmayac
+köpürmek	V;IND;PST;PRSP;PROG;INTR;POS;NOM(3,PL)		köpürüyor olacaklar mıydı		köpürmeyecer miyd
+gücenmek	V;INFR;PST;POS;DECL;NOM(1,PL)		gücenmişiz		gücenmiş miymişi
+yangın	N;SG;IND;PST;NOM(1,PL)		yangındık		yangındam
+aldırtmak	V;NEC;PST;NEG;INTR;NOM(3,SG)		aldırtmamalı mıydı		aldırtmayacak mıy
+sümürmek	V;NEC;PST;NEG;INTR;NOM(3,SG)		sümürmemeli miydi		sümürmeyacak mıy
+el sıkışmak	V;NEC;PRS;INTR;POS;NOM(3,PL)		el sıkışmeliler mi		el sıkışmayacakl
+sorum	N;LOC(PL)		sorumlarda		sorumlarında
+koza	N;ACC(PL;PSS(2,SG))		kozalarını		kozaları
+dağlı	N;LOC(PL)		dağlılarda		dağlındağlında
+acı	N;ACC(SG;PSS(2,SG))		acını		acında
+fotoğraf çekmek	V;IND;PST;PRSP;NEG;DECL;NOM(3,SG)		fotoğraf çekmeyecekti		fotoğraf çekmiş 
+fotoğraf çekmek	V;INFR;PST;NEG;DECL;NOM(1,SG)		fotoğraf çekmemişim		fotoğraf çekmiş 
+lehçe	N;ACC(PL;PSS(2,PL))		lehçelerinizi		lehçenlerizizi
+yüksek fırın	N;PL;IND;PST;NOM(2,PL)		yüksek fırınlardınız		yüksek fırındaiz
+lehçe	N;LOC(PL;PSS(2,PL))		lehçelerinizde		lehçenden
+gizlenmek	V;IND;PST;PROG;POS;DECL;NOM(1,SG)		gizleniyordum		gizlenmiydim
+kontak lens	N;DAT(SG)		kontak lense		kontak lensini
+şırınga	N;LOC(SG)		şırıngada		şırıngaya
+kipa	N;DAT(SG)		kipaya		kipaya
+üretmek	V;IND;PST;PERF;NEG;INTR;NOM(1,PL)		üretmedi miydik		üretmeyecek miydim
+kontak lens	N;ABL(PL;PSS(3,SG))		kontak lenslerinden		kontak lensinden
+aldırtmak	V;IND;FUT;POS;DECL;NOM(3,SG)		aldırtacak		aldırtmayacak mıy
+iftitah	N;ACC(SG;PSS(2,SG))		iftitahını		iftitağını
+köpürmek	V;IND;PST;PRSP;INTR;POS;NOM(3,PL)		köpürecekler miydi		köpürmeyecer miyd
+kontak lens	N;ABL(SG;PSS(3,SG))		kontak lensinden		kontak lensinden
+tıraş olmak	V;INFR;PST;PRSP;NEG;DECL;NOM(3,SG)		tıraş olmuş olmayacaktı		tıraş olacak olma
+dindarlık	N;LOC(SG;PSS(1,PL))		dindarlığımızda		dindarlığımızda
+mantık	N;NOM(SG;PSS(2,SG))		mantığın		mantık mında
+koca	N;ABL(PL;PSS(2,PL))		kocalarınızdan		kocándondaz
+solmak	V;INFR;PST;PRSP;NEG;DECL;NOM(3,PL)		solmuş olmayacaklardı		solmayacaklar
+Çin dağ kedisi	N;GEN(PL)		Çin dağ kedi		Çin dağ kedisin
+dermek	V;INFR;FUT;POS;DECL;NOM(1,SG)		derecekmişim		dermiş olmayacak
+dindarlık	N;DAT(PL;PSS(2,SG))		dindarlıklarına		dindarlığında
+sevmek	V;NEC;PRS;PROG;INTR;POS;NOM(1,SG)		seviyor olmalı mıyım		sevmeyor muydum
+parlatmak	V;NEC;PRS;INTR;POS;NOM(1,SG)		parlatmeli miyim		parlatmayacak mıym
+büyümek	V;IND;PST;PERF;NEG;DECL;NOM(1,PL)		büyümediydik		büyüz meydem
+acı	N;GEN(PL;PSS(2,PL))		acılarınızın		acızızı
+doğramak	V;IND;PST;PROG;NEG;INTR;NOM(3,PL)		doğramıyorlar mıydı		doğramaydılar
+acı	N;SG;PRS;NOM(1,SG)		acıyım		acımız
+el sıkışmak	V;IND;PRS;PROG;POS;DECL;NOM(3,PL)		el sıkışıyorlar		el sıkışmıyor o
+gücenmek	V;IND;PST;PRSP;NEG;INTR;NOM(3,PL)		gücenmeyecekler miydi		gücenmeydiller
+yordam	N;LOC(SG;PSS(3,SG))		yordamında		yordamında
+acıktırtmak	V;NEC;PRS;PROG;NEG;DECL;NOM(2,SG)		acıktırtıyor olmamalısın		acıktırtmışsın
+mantık	N;NOM(SG)		mantık		mantık nor
+koza	N;ACC(PL;PSS(1,PL))		kozalarımızı		kozamızımızda
+sümürmek	V;NEC;INFR;PST;NEG;INTR;NOM(1,SG)		sümürmemeli miymişim		sümürmüyor muydu
+solmak	V;NEC;PRS;PROG;NEG;DECL;NOM(3,PL)		soluyor olmamalılar		solmayacaklar
+solmak	V;INFR;PST;PRSP;POS;DECL;NOM(1,SG)		solmuş olacaktım		solmayacak mıydı
+nefes aldırmak	V;NEC;PRS;NEG;DECL;NOM(1,PL)		nefes aldırmameliyiz		nefes aldırmış o
+mantık	N;DAT(SG;PSS(2,PL))		mantığınıza		mantığızı
+sümürmek	V;INFR;PRS;HAB;NEG;DECL;NOM(3,PL)		sümürmezlermiş		sümürmüyor muydu
+tutmak	V;INFR;FUT;INTR;POS;NOM(3,PL)		tutacaklar mıymış		tutmayacaklar
+üretmek	V;IND;FUT;NEG;DECL;NOM(2,SG)		üretmeyeceksin		üretmeyecek olmuyd
+aygır	N;LOC(SG)		aygırda		aygıran
+koza	N;DAT(SG)		kozaya		kozaya
+solmak	V;INFR;FUT;POS;DECL;NOM(1,PL)		solacakmışız		solmayacak olmayaca
+ışın	N;GEN(PL;PSS(1,PL))		ışınlarımızın		ışımızdamızdam
+hız	N;NOM(SG;PSS(2,PL))		hızınız		hızdan
+gizlenmek	V;IND;PRS;HAB;INTR;POS;NOM(1,SG)		gizlenir miyim		gizlenmeyecekmimdim
+sevmek	V;IND;PST;HAB;POS;DECL;NOM(3,PL)		severlerdi		sevmeydin
+lehçe	N;ACC(SG;PSS(2,SG))		lehçeni		lehçende
+sorum	N;ABL(PL)		sorumlardan		sorumlarında
+köpürmek	V;IND;FUT;POS;DECL;NOM(1,SG)		köpüreceğim		köpürmüyor muydu
+büyümek	V;NEC;PST;PROG;NEG;DECL;NOM(1,PL)		büyüyor olmamalıydık		büyümez miyecek m
+yüksek fırın	N;LOC(SG;PSS(2,SG))		yüksek fırınında		yüksek fırında
+mayonez	N;NOM(SG)		mayonez		mayonez nom
+yüksek fırın	N;PL;INFR;PST;NOM(2,PL)		yüksek fırınlarmışsınız		yüksek fırınızd
+yangın	N;GEN(PL;PSS(3,SG))		yangınlarının		yangınları
+tıraş olmak	V;INFR;FUT;PROG;INTR;POS;NOM(3,SG)		tıraş oluyor olacak mıymış		tıraş olmayacak o
+yordam	N;ACC(SG)		yordamı		yordamını
+sincap	N;DAT(SG;PSS(3,SG))		sincabına		sincaplarında
+üretmek	V;INFR;FUT;PROG;NEG;DECL;NOM(1,SG)		üretiyor olmayacakmışım		üretmeyecek miyece
+aygır	N;LOC(SG;PSS(3,SG))		aygırında		aygıran
+osurmak	V;IND;FUT;PRSP;INTR;POS;NOM(2,PL)		osuracak olacak mısınız		osurmayacak olmayac
+yoldurtmak	V;INFR;FUT;PRSP;INTR;POS;NOM(1,PL)		yoldurtacak olacak mıymışız		yoldurtmayacak mıy
+tutmak	V;NEC;INFR;PRS;PROG;POS;DECL;NOM(3,SG)		tutuyor olmalıymış		tutmayacak olmayaca
+dindarlık	N;ABL(SG;PSS(2,PL))		dindarlığınızdan		dindarlığınızda
+yapışmak	V;INFR;FUT;POS;DECL;NOM(2,PL)		yapışacakmışsınız		yapışmış olmaya
+aldırtmak	V;NEC;PST;NEG;DECL;NOM(3,SG)		aldırtmamalıydı		aldırtmayacak oltm
+mayonez	N;LOC(SG;PSS(2,PL))		mayonezinizde		mayonezlarında
+ışın	N;LOC(SG;PSS(2,PL))		ışınınızda		ışınızda
+tıraş olmak	V;IND;PST;PERF;INTR;POS;NOM(3,PL)		tıraş oldular mıydı		tıraş olacaklar
+mayonez	N;ACC(PL;PSS(3,SG))		mayonezlerini		mayonezları
+tutmak	V;IND;PST;HAB;PROG;POS;DECL;NOM(3,PL)		tutuyor olurlardı		tutmayacaklardı
+yangın	N;ABL(PL;PSS(3,SG))		yangınlarından		yangınlarında
+acıktırtmak	V;NEC;PRS;POS;DECL;NOM(1,SG)		acıktırtmeliyim		acıktırtmış mı
+acı	N;LOC(SG;PSS(1,PL))		acımızda		acımızdan
+dağlı	N;ABL(SG)		dağlıdan		dağlında
+doğramak	V;INFR;PST;PRSP;NEG;DECL;NOM(2,SG)		doğramış olmayacaktın		doğramış oğamı
+karşılık	N;ACC(SG)		karşılığı		karşılıkla
+iftitah	N;ABL(SG;PSS(2,PL))		iftitahınızdan		iftitağınızda
+sincap	N;NOM(PL;PSS(1,PL))		sincaplarımız		sincaplardımızdı
+aldırtmak	V;IND;PST;HAB;INTR;POS;NOM(2,PL)		aldırtır mıydınız		aldırtmayacak mıy
+yoldurtmak	V;IND;PST;HAB;PROG;NEG;INTR;NOM(2,SG)		yoldurtuyor olmaz mıydın		yoldurtmayacak muyd
+üretmek	V;INFR;PST;PRSP;POS;DECL;NOM(1,PL)		üretmiş olacaktık		üretmeyecek miyaca
+yordam	N;ACC(SG;PSS(2,SG))		yordamını		yordamında
+acıktırtmak	V;IND;PST;PROG;NEG;DECL;NOM(3,SG)		acıktırtmıyordu		acıktırtmayacak m
+Çin dağ kedisi	N;ACC(SG)		Çin dağ kedisi		Çin dağ kedisine
+göndermek	V;INFR;PST;PERF;INTR;POS;NOM(2,PL)		göndermiş miydiniz		göndermiyüz olmuy
+hız	N;GEN(SG;PSS(1,PL))		hızımızın		hızdan
+yapışmak	V;INFR;PST;PL;NEG;INTR;NOM(1)		yapışmamış mıymışız		yapışmıyor muymu
+lehçe	N;LOC(SG;PSS(1,PL))		lehçemizde		lehçemizden
+köpürmek	V;INFR;PST;SG;NEG;INTR;NOM(1)		köpürmemiş miymişim		köpürmüş muymu
+aygır	N;ABL(SG;PSS(1,PL))		aygırımızdan		aygımızdan
+köpürmek	V;IND;PST;PROG;POS;DECL;NOM(2,SG)		köpürüyordun		köpürmüyor olmay
+tıraş olmak	V;INFR;PRS;HAB;INTR;POS;NOM(3,SG)		tıraş olur muymuş		tıraş olmayacak m
+fotoğraf çekmek	V;IND;PST;PROG;POS;DECL;NOM(3,PL)		fotoğraf çekiyorlardı		fotoğraf çekmeydi
+aygır	N;SG;PRS;NOM(1,SG)		aygırım		aygımmamım
+kontak lens	N;NOM(PL;PSS(1,PL))		kontak lenslerimiz		kontak lensimizden
+şırınga	N;PL;IND;PST;NOM(1,PL)		şırıngalardık		şırıngamızımı
+yangın	N;GEN(SG;PSS(3,SG))		yangınının		yangında
+tıraş olmak	V;IND;PRS;PROG;POS;DECL;NOM(2,PL)		tıraş oluyorsunuz		tıraş olacak olac
+gizlenmek	V;IND;FUT;PRSP;POS;DECL;NOM(3,PL)		gizlenecek olacaklar		gizlenmiş olmayaca
+dindarlık	N;ABL(PL;PSS(3,SG))		dindarlıklarından		dindarlıklarında
+iftitah	N;DAT(SG;PSS(2,SG))		iftitahına		iftitağını
+sevmek	V;IND;PST;PRSP;PROG;NEG;INTR;NOM(3,PL)		seviyor olmayacaklar mıydı		sevmeydillar
+dağlı	N;ACC(PL)		dağlıları		dağlığında
+tıraş olmak	V;IND;FUT;PROG;NEG;DECL;NOM(1,SG)		tıraş oluyor olmayacağım		tıraş olmayacak o
+acıktırtmak	V;INFR;FUT;POS;DECL;NOM(2,PL)		acıktırtacakmışsınız		acıktırtmış mı
+üretmek	V;IND;FUT;NEG;INTR;NOM(3,PL)		üretmeyecekler mi		üretmeyecekler miy
+osurmak	V;INFR;PRS;HAB;INTR;POS;NOM(1,PL)		osurur muymuşuz		osurmayacak mıymı
+hız	N;GEN(SG;PSS(2,SG))		hızının		hız mızda
+gizlenmek	V;INFR;PST;PRSP;NEG;INTR;NOM(3,PL)		gizlenmiş olmayacaklar mıydı		gizlenmiydillerim
+sevmek	V;IND;PST;PROG;POS;DECL;NOM(2,PL)		seviyordunuz		sevmeydiz
+şırınga	N;PL;PRS;NOM(3,PL)		şırıngalardır		şırıngalar
+iftitah	N;LOC(PL;PSS(2,SG))		iftitahlarında		iftitahında
+koza	N;NOM(PL)		kozalar		kozalardı
+göndermek	V;IND;PST;PROG;NEG;DECL;NOM(2,SG)		göndermiyordun		göndermiyecek olme
+gücenmek	V;IMP;NEG;DECL;NOM(2,PL)		gücenmeyin		gücenmiş olmayaca
+mantık	N;ACC(SG;PSS(2,SG))		mantığını		mantığında
+yapışmak	V;NEC;PRS;PROG;POS;DECL;NOM(1,PL)		yapışıyor olmalıyız		yapışmış olmaya
+Çin dağ kedisi	N;LOC(SG)		Çin dağ kedisi		Çin dağ kedisin
+fotoğraf çekmek	V;IND;PST;HAB;PROG;NEG;DECL;NOM(2,PL)		fotoğraf çekiyor olmazdınız		fotoğraf çekmiş 
+sincap	N;GEN(PL;PSS(2,PL))		sincaplarınızın		sincaplarınızda
+yüksek fırın	N;ABL(SG)		yüksek fırından		yüksek fırında
+koca	N;ACC(SG;PSS(1,PL))		kocamızı		kocámdan
+birleşik kelime	N;GEN(SG)		birleşik kelimenin		birleşik kelimeyer
+kontak lens	N;LOC(PL;PSS(1,PL))		kontak lenslerimizde		kontak lensımızda
+acı	N;LOC(SG)		acıda		acında
+birleşik kelime	N;LOC(SG)		birleşik kelimede		birleşik kelimeyer
+ışın	N;GEN(SG)		ışının		ışın
+fotoğraf çekmek	V;IMP;LGSPEC2;NEG;DECL;NOM(2,PL)		fotoğraf çekmeyiniz		fotoğraf çekmiş 
+aldırtmak	V;IND;PST;NEG;DECL;NOM(3,SG)		aldırtmadı		aldırtmayacak mıy
+gücenmek	V;IND;FUT;INTR;POS;NOM(3,PL)		gücenecekler mi		gücenmeyden
+yordam	N;LOC(PL;PSS(3,SG))		yordamlarında		yordamlarında
+mayonez	N;ABL(PL)		mayonezlerden		mayonezlerden
+koca	N;DAT(PL;PSS(2,SG))		kocalarına		kocayacakları
+gizlenmek	V;INFR;FUT;PROG;NEG;INTR;NOM(1,SG)		gizleniyor olmayacak mıymışım		gizlenmiş olmayaca
+akciğer anjiyografisi	N;NOM(PL)		akciğer anjiyografileri		akciğer akciğer a
+karşılık	N;NOM(SG;PSS(2,PL))		karşılığınız		karşılığınızd
+gizlenmek	V;INFR;PST;PERF;NEG;DECL;NOM(3,PL)		gizlenmemişlerdi		gizlenmiş olmayaca
+yapışmak	V;NEC;PST;PROG;INTR;POS;NOM(3,SG)		yapışıyor olmalı mıydı		yapışmayacak mı
+tutmak	V;NEC;PRS;INTR;POS;NOM(3,PL)		tutmeliler mi		tutmayacaklar
+şırınga	N;GEN(SG;PSS(1,PL))		şırıngamızın		şırıngızdan
+yönetim	N;ABL(PL)		yönetimlerden		yönetimlerinden
+osurmak	V;NEC;PST;NEG;INTR;NOM(1,SG)		osurmamalı mıydım		osurmayacak mıydı
+mantık	N;DAT(PL;PSS(2,SG))		mantıklarına		mantığında
+tutmak	V;IND;PST;PRSP;PROG;NEG;DECL;NOM(3,PL)		tutuyor olmayacaklardı		tutmayacaklar
+sevmek	V;IND;PST;HAB;PROG;INTR;POS;NOM(1,PL)		seviyor olur muyduk		sevmeyacak muydum
+yapışmak	V;IND;PST;PRSP;PROG;NEG;INTR;NOM(1,SG)		yapışıyor olmayacak mıydım		yapışmıyor muydu
+şırınga	N;GEN(PL;PSS(1,PL))		şırıngalarımızın		şırıngımızdam
+koza	N;GEN(SG;PSS(2,PL))		kozanızın		kozandaz
+karşılık	N;LOC(SG;PSS(3,SG))		karşılığında		karşılıkların
+yoldurtmak	V;IND;FUT;INTR;POS;NOM(2,PL)		yoldurtacak mısınız		yoldurtmayacak mıy
+mayonez	N;ABL(SG;PSS(2,PL))		mayonezinizden		mayonezlerinden
+yüksek fırın	N;SG;INFR;PST;NOM(2,PL)		yüksek fırınmışsınız		yüksek fırınızd
+gücenmek	V;INFR;PRS;PROG;INTR;POS;NOM(1,PL)		güceniyor muymuşuz		gücenmiş miymişi
+el sıkışmak	V;IND;PST;PRSP;PROG;NEG;DECL;NOM(2,PL)		el sıkışıyor olmayacaktınız		el sıkışmıyor o
+birleşik kelime	N;DAT(SG)		birleşik kelimeye		birleşik kelimeye
+sevmek	V;NEC;PST;NEG;INTR;NOM(2,SG)		sevmemeli miydin		sevmeyacak olmayaca
+profiterol	N;NOM(SG)		profiterol		profiterolur
+iftitah	N;NOM(SG;PSS(1,PL))		iftitahımız		iftitahmışmızda
+sorum	N;DAT(SG)		soruma		sorumya
+yüksek fırın	N;SG;PRS;NOM(3,PL)		yüksek fırınlar		yüksek fırınlar
+gizlenmek	V;NEC;INFR;PST;NEG;INTR;NOM(2,PL)		gizlenmemeli miymişsiniz		gizlenmiymiş olmuy
+göndermek	V;IND;PRS;HAB;NEG;INTR;NOM(3,SG)		göndermez mi		göndermiyecek miyd
+ışın	N;SG;INFR;PST;NOM(2,SG)		ışınmışsın		ışın
+aldırtmak	V;NEC;PST;POS;DECL;NOM(1,PL)		aldırtmalıydık		aldırtmağızda
+mayonez	N;ACC(PL;PSS(1,PL))		mayonezlerimizi		mayonezlarımızda
+kontak lens	N;LOC(SG;PSS(2,PL))		kontak lensinizde		kontak lensinizin
+aygır	N;PL;IND;PST;NOM(1,PL)		aygırlardık		aygızdam
+sevmek	V;INFR;PRS;HAB;NEG;DECL;NOM(3,PL)		sevmezlermiş		sevmeyacan
+dindarlık	N;GEN(PL;PSS(3,SG))		dindarlıklarının		dindarlıklarında
+lehçe	N;ACC(PL;PSS(2,SG))		lehçelerini		lehçelerinde
+sevmek	V;IND;PST;PRSP;PROG;NEG;INTR;NOM(2,PL)		seviyor olmayacak mıydınız		sevmeydiz
+fotoğraf çekmek	V;INFR;PST;PRSP;NEG;DECL;NOM(3,PL)		fotoğraf çekmiş olmayacaklardı		fotoğraf çekmiş 
+koca	N;GEN(PL;PSS(2,PL))		kocalarınızın		kocağızı
+köpürmek	V;INFR;FUT;PERF;INTR;POS;NOM(3,SG)		köpürmüş olacak mı		köpürmüyor muydu
+yüksek fırın	N;PL;IND;PST;NOM(3,SG)		yüksek fırınlardı		yüksek fırında
+parlatmak	V;IND;PRS;PROG;INTR;POS;NOM(2,PL)		parlatıyor musunuz		parlatmayacak mıyd
+kipa	N;DAT(PL;PSS(2,SG))		kipalarına		kipaları
+kontak lens	N;NOM(PL)		kontak lensler		kontak lensin
+osurmak	V;IND;PRS;PROG;INTR;POS;NOM(1,PL)		osuruyor muyuz		osurmayor muydum
+göndermek	V;NEC;PRS;INTR;POS;NOM(1,PL)		göndermeli miyiz		göndermiyor muydem
+yapışmak	V;IND;PST;HAB;PROG;NEG;INTR;NOM(1,PL)		yapışıyor olmaz mıydık		yapışmıyor muydu
+doğramak	V;NEC;INFR;PST;POS;DECL;NOM(3,PL)		doğramalılarmış		doğramaydılar
+şırınga	N;SG;PRS;NOM(2,PL)		şırıngasınız		şırıngız
+tıraş olmak	V;INFR;FUT;HAB;POS;DECL;NOM(3,SG)		tıraş olur olacakmış		tıraş olacak olma
+üretmek	V;INFR;PRS;PROG;POS;DECL;NOM(3,SG)		üretiyormuş		üretmeyecek olmaya
+yordam	N;LOC(SG)		yordamda		yordamında
+yüksek fırın	N;LOC(PL;PSS(3,SG))		yüksek fırınlarında		yüksek fırında
+mantık	N;LOC(SG;PSS(1,PL))		mantığımızda		mantığımızdan
+yapışmak	V;IND;PST;HAB;INTR;POS;NOM(3,SG)		yapışır mıydı		yapışmayacak mı
+aygır	N;SG;IND;PST;NOM(3,PL)		aygırdılar		aygırdalar
+koza	N;ABL(SG;PSS(2,SG))		kozandan		kozanda
+nefes aldırmak	V;NEC;PST;PROG;NEG;INTR;NOM(2,PL)		nefes aldırıyor olmamalı mıydınız		nefes aldırmayacak
+yangın	N;GEN(PL;PSS(2,SG))		yangınlarının		yangında
+iftitah	N;ACC(PL;PSS(1,PL))		iftitahlarımızı		iftitahımızı
+nefes aldırmak	V;NEC;PST;POS;DECL;NOM(3,SG)		nefes aldırmalıydı		nefes aldırmayacak
+büyümek	V;NEC;PST;INTR;POS;NOM(2,PL)		büyümeli miydiniz		büyümüyüz olmay
+aldırtmak	V;IND;PST;HAB;NEG;INTR;NOM(3,SG)		aldırtmaz mıydı		aldırtmayacak mıy
+göndermek	V;IND;PST;PERF;POS;DECL;NOM(1,SG)		gönderdiydim		göndermeyecek miyd
+hız	N;ABL(PL;PSS(3,SG))		hızlarından		hızlarda
+yangın	N;ACC(PL;PSS(1,PL))		yangınlarımızı		yangındamızdan
+akciğer anjiyografisi	N;LOC(PL)		akciğer anjiyografilerinde		akciğer anjiyograf
+yapışmak	V;IND;FUT;PROG;POS;DECL;NOM(3,SG)		yapışıyor olacak		yapışmayacak olma
+tıraş olmak	V;INFR;PST;SG;NEG;INTR;NOM(3)		tıraş olmamış mıymış		tıraş olmayacak m
+tutmak	V;IND;PST;HAB;NEG;DECL;NOM(2,SG)		tutmazdın		tutmayacak olmayaca
+mayonez	N;LOC(PL;PSS(2,PL))		mayonezlerinizde		mayonezlarında
+yapışmak	V;IND;PST;PERF;INTR;POS;NOM(1,PL)		yapıştı mıydık		yapışmıyor muydu
+kipa	N;ABL(PL)		kipalardan		kipalardındı
+kipa	N;ACC(PL;PSS(3,SG))		kipalarını		kipaları
+mantık	N;DAT(SG)		mantığa		mantıkında
+sevmek	V;INFR;FUT;HAB;INTR;POS;NOM(3,SG)		sever olacak mıymış		sevmeyacak olmayaca
+karşılık	N;ABL(PL;PSS(2,PL))		karşılıklarınızdan		karşılığınızd
+sümürmek	V;IND;PST;PERF;POS;DECL;NOM(2,PL)		sümürdüydünüz		sümürmüyor olmay
+karşılık	N;ACC(SG;PSS(1,PL))		karşılığımızı		karşılığımızd
+fotoğraf çekmek	V;IND;PST;PROG;NEG;DECL;NOM(1,PL)		fotoğraf çekmiyorduk		fotoğraf çekmiş 
+yoldurtmak	V;IND;PRS;PROG;NEG;DECL;NOM(1,PL)		yoldurtmuyoruz		yoldurtmayacak mıy
+Çin dağ kedisi	N;ABL(PL)		Çin dağ kedi		Çin dağ kedisinde
+solmak	V;IND;PST;INTR;POS;NOM(3,SG)		soldu mu		solmayacak muydu
+yoldurtmak	V;INFR;FUT;PRSP;NEG;DECL;NOM(1,PL)		yoldurtacak olmayacakmışız		yoldurtmayacak mıy
+karşılık	N;DAT(PL;PSS(3,SG))		karşılıklarına		karşılıklarını
+koca	N;ABL(PL)		kocalardan		kocaydızda
+aldırtmak	V;INFR;FUT;PROG;POS;DECL;NOM(1,PL)		aldırtıyor olacakmışız		aldırtmayacak mıy
+köpürmek	V;IND;PST;PERF;POS;DECL;NOM(2,PL)		köpürdüydünüz		köpürmüyor olmay
+tıraş olmak	V;INFR;PRS;HAB;POS;DECL;NOM(1,SG)		tıraş olurmuşum		tıraş olmayacak m
+sincap	N;GEN(SG)		sincabın		sincapların
+mayonez	N;ACC(SG)		mayonezi		mayonezları
+doğramak	V;INFR;FUT;PRSP;INTR;POS;NOM(3,PL)		doğraacak olacaklar mıymış		doğramaymış olam
+acı	N;DAT(SG;PSS(1,PL))		acımıza		acımızdan
+fotoğraf çekmek	V;INFR;FUT;PROG;NEG;DECL;NOM(2,SG)		fotoğraf çekiyor olmayacakmışsın		fotoğraf çekmiş 
+süper kahraman	N;NOM(SG)		süper kahraman		süper kahraman muy
+lehçe	N;ABL(SG;PSS(1,PL))		lehçemizden		lehçimizden
+parlatmak	V;NEC;PRS;PROG;NEG;INTR;NOM(3,PL)		parlatıyor olmamalılar mı		parlatmayacaklar
+el sıkışmak	V;IND;PRS;PROG;INTR;POS;NOM(2,PL)		el sıkışıyor musunuz		el sıkışmıyor o
+süper kahraman	N;DAT(PL)		süper kahramanlara		süper kahramanlar
+el sıkışmak	V;NEC;PST;NEG;DECL;NOM(3,SG)		el sıkışmamalıydı		el sıkışmış ol
+iftitah	N;DAT(SG;PSS(1,PL))		iftitahımıza		iftitağımızı
+nefes aldırmak	V;INFR;PRS;HAB;POS;DECL;NOM(2,PL)		nefes aldırırmışsınız		nefes aldırmış o
+lehçe	N;DAT(PL)		lehçelere		lehçelerinden
+acı	N;DAT(SG;PSS(2,SG))		acına		acında
+el sıkışmak	V;IND;PST;HAB;PROG;POS;DECL;NOM(2,SG)		el sıkışıyor olurdun		el sıkışmıyor o
+yangın	N;SG;PRS;NOM(1,PL)		yangınız		yangımızdam
+göndermek	V;NEC;PST;PROG;NEG;INTR;NOM(2,SG)		gönderiyor olmamalı mıydın		göndermiyecek miye
+övmek	V;IND;PRS;HAB;NEG;DECL;NOM(1,SG)		övmem		övmeyacak mış
+koza	N;ACC(SG;PSS(1,PL))		kozamızı		kozamızda
+tıraş olmak	V;IND;PST;PERF;POS;DECL;NOM(1,SG)		tıraş olduydum		tıraş olmayacak o
+dindarlık	N;DAT(PL)		dindarlıklara		dindarlıklarınız
+sincap	N;NOM(SG;PSS(2,SG))		sincabın		sincapların
+iftitah	N;LOC(SG;PSS(2,PL))		iftitahınızda		iftitağınızda
+acı	N;GEN(PL)		acıların		acığındacız
+dermek	V;NEC;INFR;PST;INTR;POS;NOM(3,PL)		dermeliler miymiş		dermeyecelir
+yangın	N;ACC(SG;PSS(1,PL))		yangınımızı		yangımızda
+hız	N;ACC(SG;PSS(2,SG))		hızını		hızı
+mayonez	N;GEN(PL;PSS(2,PL))		mayonezlerinizin		mayonezleriz
+birleşik kelime	N;ABL(SG)		birleşik kelimeden		birleşik kelimeyer
+karşılık	N;ABL(PL;PSS(3,SG))		karşılıklarından		karşılıklarında
+yangın	N;NOM(SG;PSS(2,PL))		yangınınız		yangınızda
+doğramak	V;INFR;PST;PERF;INTR;POS;NOM(1,SG)		doğramış mıydım		doğramış mıydı
+yoldurtmak	V;IND;PST;PRSP;POS;DECL;NOM(2,SG)		yoldurtacaktın		yoldurtmayacak oltm
+köpürmek	V;IND;PST;PROG;NEG;INTR;NOM(2,SG)		köpürmüyor muydun		köpürmüyor muydu
+sincap	N;ACC(PL;PSS(3,SG))		sincaplarını		sincaplarında
+üretmek	V;NEC;INFR;PST;NEG;DECL;NOM(1,SG)		üretmemeliymişim		üretmeyecek miymi
+lehçe	N;ACC(SG)		lehçeyi		lehçende
+sevmek	V;IND;FUT;NEG;DECL;NOM(3,SG)		sevmeyecek		sevmeyacak olmayaca
+koza	N;LOC(SG)		kozada		kozaya
+kontak lens	N;GEN(PL;PSS(3,SG))		kontak lenslerinin		kontak lensinde
+sümürmek	V;IND;PRS;PROG;NEG;DECL;NOM(3,PL)		sümürmüyorlar		sümürmeyecen
+yapışmak	V;IND;FUT;PRSP;POS;DECL;NOM(2,PL)		yapışacak olacaksınız		yapışmıyor olmay
+Çin dağ kedisi	N;DAT(PL)		Çin dağ kedi		Çin dağ kedisinde
+yönetim	N;ACC(SG;PSS(1,PL))		yönetimimizi		yönetimizimizden
+mayonez	N;ACC(SG;PSS(2,PL))		mayonezinizi		mayonezlarızda
+üretmek	V;IMP;POS;DECL;NOM(2,PL)		üretin		üretmeyecekliydiz
+sorum	N;NOM(PL)		sorumlar		sorumların
+büyümek	V;IND;PST;PERF;NEG;INTR;NOM(1,PL)		büyümedi miydik		büyümeyacak mıyd
+dağlı	N;ACC(SG)		dağlıyı		dağlına
+solmak	V;IND;PRS;HAB;NEG;DECL;NOM(3,SG)		solmaz		solmayacak olmayaca
+mantık	N;ABL(PL;PSS(2,SG))		mantıklarından		mantıklarında
+aldırtmak	V;NEC;PRS;POS;DECL;NOM(2,SG)		aldırtmelisin		aldırtmayacak mıy
+mantık	N;ABL(PL)		mantıklardan		mantıklarından
+köpürmek	V;NEC;INFR;PRS;PROG;NEG;DECL;NOM(2,SG)		köpürüyor olmamalıymışsın		köpürmüyor olmay
+acı	N;PL;INFR;PST;NOM(2,PL)		acılarmışsınız		acızız
+yüksek fırın	N;LOC(SG;PSS(1,PL))		yüksek fırınımızda		yüksek fırımızd
+tıraş olmak	V;IND;PST;HAB;INTR;POS;NOM(1,PL)		tıraş olur muyduk		tıraş olmayacak o
+mayonez	N;ABL(SG;PSS(1,PL))		mayonezimizden		mayonezmizden
+büyümek	V;NEC;INFR;PRS;PROG;NEG;INTR;NOM(1,PL)		büyüyor olmamalı mıymışız		büyümüyor muymu
+yoldurtmak	V;IND;PST;PRSP;NEG;DECL;NOM(1,SG)		yoldurtmayacaktım		yoldurtmayacak mıy
+dermek	V;INFR;FUT;PERF;POS;DECL;NOM(2,PL)		dermiş olacaksınız		dermiş olmayacak o
+yüksek fırın	N;PL;INFR;PST;NOM(2,SG)		yüksek fırınlarmışsın		yüksek fırında
+koca	N;NOM(PL;PSS(1,PL))		kocalarımız		kocamlızdam
+sorum	N;GEN(SG)		sorumun		sorumya
+dermek	V;NEC;PRS;PROG;POS;DECL;NOM(3,PL)		deriyor olmalılar		dermişlar
+yangın	N;SG;INFR;PST;NOM(1,SG)		yangınmışım		yangımızda
+aldırtmak	V;INFR;FUT;PRSP;POS;DECL;NOM(3,PL)		aldırtacak olacaklarmış		aldırtmayacak mıy
+aygır	N;SG;PRS;NOM(3,PL)		aygırlar		aygılar
+parlatmak	V;IND;PST;PERF;POS;DECL;NOM(1,PL)		parlattıydık		parlatmayacak mıy
+hız	N;ACC(PL;PSS(2,SG))		hızlarını		hızla
+acıktırtmak	V;NEC;PST;PROG;INTR;POS;NOM(1,SG)		acıktırtıyor olmalı mıydım		acıktırtmış mı
+yönetim	N;GEN(SG;PSS(2,SG))		yönetiminin		yönetimine
+acı	N;NOM(SG;PSS(2,SG))		acın		acında
+köpürmek	V;NEC;PRS;POS;DECL;NOM(1,SG)		köpürmeliyim		köpürmüş olmaya
+köpürmek	V;INFR;PST;PERF;NEG;INTR;NOM(1,SG)		köpürmemiş miydim		köpürmüyor muydu
+yönetim	N;DAT(PL;PSS(2,PL))		yönetimlerinize		yönetillerizi
+solmak	V;IND;PST;PRSP;NEG;DECL;NOM(2,SG)		solmayacaktın		solmayacak olmayaca
+karşılık	N;ACC(PL)		karşılıkları		karşılığınızd
+profiterol	N;DAT(SG)		profiterole		profiteroları
+karşılık	N;GEN(PL;PSS(2,PL))		karşılıklarınızın		karşılığınızd
+köpürmek	V;INFR;FUT;PERF;POS;DECL;NOM(2,PL)		köpürmüş olacaksınız		köpürmüyüz olma
+ışın	N;LOC(SG)		ışında		ışında
+süper kahraman	N;DAT(SG)		süper kahramana		süper kahramanlar
+koca	N;ACC(PL;PSS(1,PL))		kocalarımızı		kocamızımızdamı
+nefes aldırmak	V;IND;PST;HAB;PROG;NEG;DECL;NOM(1,SG)		nefes aldırıyor olmazdım		nefes aldırmayacak
+gizlenmek	V;INFR;PRS;HAB;NEG;DECL;NOM(2,SG)		gizlenmezmişsin		gizlenmiş olmuymu
+parlatmak	V;IND;PST;HAB;PROG;NEG;INTR;NOM(3,PL)		parlatıyor olmazlar mıydı		parlatmayacak mıyd
+yoldurtmak	V;INFR;FUT;HAB;INTR;POS;NOM(2,SG)		yoldurtur olacak mıymışsın		yoldurtmayacak mıy
+doğramak	V;INFR;FUT;PROG;INTR;POS;NOM(3,PL)		doğruyor olacaklar mıymış		doğramaymış
+yordam	N;NOM(SG)		yordam		yordam nordam norda
+tıraş olmak	V;IND;PST;NEG;DECL;NOM(1,PL)		tıraş olmadık		tıraş olmayacak o
+mantık	N;LOC(PL;PSS(2,PL))		mantıklarınızda		mantığızdan
+yordam	N;NOM(PL;PSS(1,PL))		yordamlarımız		yordamlarımızdam
+dermek	V;IND;PST;PRSP;PROG;POS;DECL;NOM(1,PL)		deriyor olacaktık		dermeyacak muydum
+şırınga	N;ABL(SG;PSS(3,SG))		şırıngasından		şırıngala
+iftitah	N;GEN(PL;PSS(3,SG))		iftitahlarının		iftitahları
+yoldurtmak	V;IND;FUT;INTR;POS;NOM(3,SG)		yoldurtacak mı		yoldurtmayacak mıy
+mayonez	N;GEN(SG)		mayonezin		mayonez miyonez miy
+nefes aldırmak	V;INFR;PRS;PROG;NEG;DECL;NOM(1,PL)		nefes aldırmıyormuşuz		nefes aldırmış o
+iftitah	N;NOM(PL;PSS(3,SG))		iftitahları		iftitahların
+karşılık	N;NOM(SG;PSS(2,SG))		karşılığın		karşılık marşı
+yapışmak	V;IND;PST;HAB;PROG;INTR;POS;NOM(2,PL)		yapışıyor olur muydunuz		yapışmıyız olma
+ışın	N;SG;PRS;NOM(3,PL)		ışınlar		ışınlar
+şırınga	N;LOC(PL;PSS(2,PL))		şırıngalarınızda		şırıngadızızı
+dermek	V;NEC;PST;POS;DECL;NOM(1,PL)		dermeliydik		dermezlarız
+profiterol	N;GEN(SG)		profiterolün		profiterolur
+gücenmek	V;INFR;PRS;HAB;INTR;POS;NOM(2,PL)		gücenir miymişsiniz		gücenmiş olmayaca
+dağlı	N;ABL(PL)		dağlılardan		dağlında
+tutmak	V;INFR;PRS;HAB;NEG;INTR;NOM(1,PL)		tutmaz mıymışız		tutmayacak mıyız
+kipa	N;GEN(PL;PSS(3,SG))		kipalarının		kipalardı
+sincap	N;LOC(SG;PSS(2,PL))		sincabınızda		sincaplarınızda
+sorum	N;LOC(SG)		sorumda		sorumları
+nefes aldırmak	V;IND;PST;HAB;PROG;NEG;DECL;NOM(3,PL)		nefes aldırıyor olmazlardı		nefes aldırmayacak
+dermek	V;INFR;PST;SG;POS;DECL;NOM(3)		dermişmiş		dermiydu
+hız	N;ACC(SG)		hızı		hızı
+ışın	N;NOM(PL;PSS(2,PL))		ışınlarınız		ışınızda
+fotoğraf çekmek	V;NEC;PST;INTR;POS;NOM(2,SG)		fotoğraf çekmeli miydin		fotoğraf çekmiş 
+lehçe	N;NOM(PL)		lehçeler		lehçemedimizden
+dermek	V;IND;PST;PRSP;NEG;DECL;NOM(1,SG)		dermeyecektim		dermeyecektim
+profiterol	N;ACC(SG)		profiterolü		profiterolura
+dindarlık	N;NOM(PL;PSS(3,SG))		dindarlıkları		dindarlıklarında
+koza	N;ABL(PL;PSS(2,PL))		kozalarınızdan		kozandazlarınızda
+sincap	N;LOC(PL)		sincaplarda		sincaplardı
+acıktırtmak	V;INFR;FUT;PRSP;NEG;INTR;NOM(2,SG)		acıktırtacak olmayacak mıymışsın		acıktırtmış mı
+yapışmak	V;NEC;PST;PROG;NEG;DECL;NOM(2,SG)		yapışıyor olmamalıydın		yapışmışsın
+koza	N;NOM(SG)		koza		kozayn
+acı	N;ABL(PL;PSS(1,PL))		acılarımızdan		acımızdan
+sümürmek	V;IND;FUT;PRSP;NEG;INTR;NOM(2,SG)		sümürecek olmayacak mısın		sümürmeyacak muyd
+fotoğraf çekmek	V;IMP;POS;DECL;NOM(2,SG)		fotoğraf çek		fotoğraf çekmişi
+acıktırtmak	V;IND;FUT;PRSP;INTR;POS;NOM(2,PL)		acıktırtacak olacak mısınız		acıktırtmıymış
+yönetim	N;DAT(PL;PSS(3,SG))		yönetimlerine		yönetilleri
+yönetim	N;GEN(SG;PSS(3,SG))		yönetiminin		yönetimine
+dindarlık	N;DAT(SG;PSS(2,SG))		dindarlığına		dindarlığına
+yönetim	N;ABL(PL;PSS(1,PL))		yönetimlerimizden		yönetimlerimizden
+koca	N;SG;PRS;NOM(2,SG)		kocasın		kocayocacacaca
+dermek	V;IND;FUT;PROG;POS;DECL;NOM(1,SG)		deriyor olacağım		dermeyecek miydum
+nefes aldırmak	V;IND;PST;HAB;PROG;NEG;DECL;NOM(1,PL)		nefes aldırıyor olmazdık		nefes aldırmış o
+dağlı	N;GEN(SG)		dağlının		dağlıya
+mayonez	N;LOC(PL;PSS(3,SG))		mayonezlerinde		mayonezları
+aldırtmak	V;NEC;PRS;NEG;DECL;NOM(3,PL)		aldırtmameliler		aldırtmayacakları
+göndermek	V;IND;PST;PROG;INTR;POS;NOM(2,SG)		gönderiyor muydun		göndermiyor muydu
+sümürmek	V;IND;FUT;PROG;NEG;INTR;NOM(3,SG)		sümürüyor olmayacak mı		sümürmeyacak mıy
+profiterol	N;ACC(PL)		profiterolleri		profiterollerolor
+lehçe	N;ABL(PL;PSS(2,PL))		lehçelerinizden		lehçenden
+parlatmak	V;IND;PST;PRSP;NEG;INTR;NOM(1,PL)		parlatmayacak mıydık		parlatmayacak mıyd
+süper kahraman	N;ABL(SG)		süper kahramandan		süper kahramayacan
+dağlı	N;DAT(PL)		dağlılara		dağlındağlında
+mayonez	N;DAT(SG;PSS(2,SG))		mayonezine		mayonezlerda
+yangın	N;SG;INFR;PST;NOM(2,SG)		yangınmışsın		yangında
+el sıkışmak	V;INFR;PST;NEG;DECL;NOM(1,SG)		el sıkışmamışım		el sıkışmış ol
+aldırtmak	V;NEC;INFR;PST;POS;DECL;NOM(3,PL)		aldırtmalılarmış		aldırtmaymışsın
+hız	N;GEN(PL)		hızların		hızda
