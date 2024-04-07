@@ -5,14 +5,21 @@ import json
 import gzip
 from multiprocess import Pool
 from functools import partial
-from typing import Tuple, Dict, Any
+from typing import Tuple, Dict, Any, List
 
+DEFAULTS = {
+    "version": "e7f1b32",
+    "base_url": "https://raw.github.com/sigmorphon/2023InflectionST/",
+    "base_path": "datasets",
+}
 INFO = """
 The version indicate the commit from the git repo:
 https://github.com/sigmorphon/2023InflectionST
 """
 
-LANGS = ["dan", "deu", "eng", "ita", "tur", "spa", "fra"]
+
+ROMANCE = ["ita", "spa", "fra"]
+LANGS = ["tur", *ROMANCE]
 
 MODE_NAMIG = {
     "train": ".trn",
@@ -105,6 +112,23 @@ def dump(data: Dict[str, Any], lang: str, base_path: Path):
             json.dump(val, f)
 
 
+def create_multi_lang(
+    llang: List[str], version: str, base_url: str, base_path: str
+):
+    datas = [
+        extract_process(*read_lang(lang, version, base_url)) for lang in llang
+    ]
+    # merge all the data
+    result = datas[0].copy()
+
+    for d in datas[1:]:
+        for key in d.keys():
+            result[key]["data"].extend(d[key]["data"])
+
+    base_path = Path(base_path)
+    dump(result, "multi_romance", base_path)
+
+
 def pre_proc_data(lang: str, version: str, base_url: str, base_path: str):
     """Coordinates the data preprocessing pipeline for a single language.
 
@@ -115,8 +139,7 @@ def pre_proc_data(lang: str, version: str, base_url: str, base_path: str):
         base_path: The base directory where processed data will be saved.
     """
 
-    if isinstance(base_path, str):
-        base_path = Path(base_path)  # Convert string paths to Path objects
+    base_path = Path(base_path)  # Convert string paths to Path objects
 
     raw_data, raw_version = read_lang(lang, version, base_url)  # Read raw data
     processed_data = extract_process(raw_data, raw_version)  # Process the data
@@ -129,7 +152,7 @@ if __name__ == "__main__":
         "-v",
         "--version",
         type=str,
-        default="e7f1b32",
+        default=DEFAULTS["version"],
         help="branch or commit of the github repo",
     )
 
@@ -137,7 +160,7 @@ if __name__ == "__main__":
         "-u",
         "--base_url",
         type=str,
-        default="https://raw.github.com/sigmorphon/2023InflectionST/",
+        default=DEFAULTS["base_url"],
         help="the github repo from which the data will be taken",
     )
 
@@ -145,7 +168,7 @@ if __name__ == "__main__":
         "-p",
         "--base_path",
         type=str,
-        default="datasets",
+        default=DEFAULTS["base_path"],
         help="Base path where to dump the processed data",
     )
 
@@ -153,11 +176,16 @@ if __name__ == "__main__":
         "-l",
         "--lang",
         required=True,
-        choices=LANGS + ["all"],
-        help="The language of the data, if all then all language will be processed",
+        choices=LANGS + ["all", "multi_lang"],
+        help="The language of the data, if all then all language will be processed, if multi_lang a dataset containing all the available languages will be created",
     )
     args = parser.parse_args()
     base_args = vars(args)
+
+    if args.lang == "multi_lang":
+        del base_args["lang"]
+        create_multi_lang(**base_args, llang=ROMANCE)
+        exit(0)
 
     if args.lang != "all":
         pre_proc_data(**base_args)

@@ -20,6 +20,8 @@
 * **`hyper.py`** Defines the `HyperRelatedness` dataclass to store experiment-related hyperparameters.
 * **`__main__`** The main script where you configure experiments and launch training/evaluation routines.
 
+## Configurations
+In the `conf` folder the different configurations for the experiments are present
 
 
 ## Getting Started
@@ -44,5 +46,24 @@
       python -m nlp baseline --logger print --early_patience 5 --val_epoch 2 --max_epoch 1 --lang spa
       ```
 
+**3. Run Relatedness Experiments**
+   * **Check Available Options:**
+      ```bash
+      python -m nlp related --help
+      ```
 
-## TODO
+   * **Example Run with Selected Parameters:**
+      ```bash
+      python -m nlp related --logger print --early_patience 5 --val_epoch 2 --max_epoch 1 --train_languages ita --test_languages spa
+	  ```
+
+**4. Evaluate models**
+   * **Check Available Options:**
+      ```bash
+      python -m nlp related --help
+      ```
+
+   * **Example Run with Selected Parameters:**
+      ```bash
+      python -m nlp related --logger print --early_patience 5 --val_epoch 2 --max_epoch 1 --train_languages ita --test_languages spa
+	  ```

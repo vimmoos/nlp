@@ -291,6 +291,19 @@ class Wrapper:
 
         self.model.save_pretrained(str(model_path))
 
+    def load_model_from_path(self, path: Path, is_trainable: bool = True):
+        if self.with_peft:
+            conf = PeftConfig.from_pretrained(path)
+            model = self.model_cls.from_pretrained(
+                conf.base_model_name_or_path
+            )
+            self.model = PeftModel.from_pretrained(
+                model, path, is_trainable=is_trainable
+            )
+        else:
+            self.model = self.model_cls.from_pretrained(path)
+        self.re_init()
+
     def load_model(
         self,
         languages: list,
@@ -317,14 +330,4 @@ class Wrapper:
         if not load_dir.is_dir():
             raise OSError(f"Model file not found: {load_dir}")
 
-        if self.with_peft:
-            conf = PeftConfig.from_pretrained(load_dir)
-            model = self.model_cls.from_pretrained(
-                conf.base_model_name_or_path
-            )
-            self.model = PeftModel.from_pretrained(
-                model, load_dir, is_trainable=is_trainable
-            )
-        else:
-            self.model = self.model_cls.from_pretrained(load_dir)
-        self.re_init()
+        self.load_model_from_path(load_dir, is_trainable)

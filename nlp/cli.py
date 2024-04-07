@@ -1,6 +1,7 @@
 from argparse import ArgumentParser
 from nlp import runner, hyper, wrapper, metric
 import wandb
+from functools import partial
 
 
 logger_choices = ["wandb", "print", "nologger"]
@@ -46,15 +47,80 @@ base_args = {
         default=42,
         help="Random seed for reproducibility (default: 42)",
     ),
+    "--lang": dict(
+        type=str,
+        required=True,
+        help="Language to train the model on",
+    ),
+    "--full": dict(
+        action="store_true",
+        help="Perform a fine-tuning on the whole model",
+    ),
+    "--train_languages": dict(
+        type=str,
+        nargs="+",
+        required=True,
+        help="List of languages to train the model on",
+    ),
+    "--test_languages": dict(
+        type=str,
+        nargs="+",
+        required=True,
+        help="List of languages to evaluate the model on",
+    ),
+    "--model_path": dict(
+        type=str,
+        default=None,
+        help="Model path",
+    ),
 }
+
+baseline_args = [
+    "logger",
+    "early_patience",
+    "val_epoch",
+    "max_epoch",
+    "rank",
+    "lora_alpha",
+    "lora_dropout",
+    "seed",
+    "lang",
+    "full",
+]
+relatedness_args = [
+    "logger",
+    "early_patience",
+    "val_epoch",
+    "max_epoch",
+    "rank",
+    "lora_alpha",
+    "lora_dropout",
+    "seed",
+    "train_languages",
+    "test_languages",
+]
+evaluation_args = [
+    "logger",
+    "rank",
+    "train_languages",
+    "test_languages",
+    "model_path",
+]
+
+
+def with_default(arguments, flag):
+    return getattr(
+        arguments, flag, base_args["--" + flag].get("default", None)
+    )
 
 
 def make_hyper(args):
     full = args.full if args.command == "baseline" else False
+    with_d = partial(with_default, args)
 
     conf = hyper.HyperRelatedness(
         logger=args.logger,
-        early_patience=args.early_patience,
+        early_patience=with_d("early_patience"),
         early_invert=True,
         val_metrics=[
             "accuracy",
@@ -62,14 +128,14 @@ def make_hyper(args):
             "hamming_dist",
             "similarity",
         ],
-        val_epoch=args.val_epoch,
-        max_epoch=args.max_epoch,
-        train_languages=args.train_languages,
-        test_languages=args.test_languages,
-        seed=args.seed,
-        r=args.rank,
-        lora_alpha=args.lora_alpha,
-        lora_dropout=args.lora_dropout,
+        val_epoch=with_d("val_epoch"),
+        max_epoch=with_d("max_epoch"),
+        train_languages=with_d("train_languages"),
+        test_languages=with_d("test_languages"),
+        seed=with_d("seed"),
+        r=with_d("rank"),
+        lora_alpha=with_d("lora_alpha"),
+        lora_dropout=with_d("lora_dropout"),
         with_peft=not full,
     )
 
@@ -106,42 +172,24 @@ def run_cli():
         "related", help="Run relatedness experiments"
     )
 
+    evaluation_parser = subparsers.add_parser(
+        "evaluate", help="Run evaluation of a model"
+    )
+
     command_functions = {
         "baseline": runner.run_baseline,
         "related": runner.run_relatedness,
+        "evaluate": runner.evaluate_model,
     }
 
     for k, v in base_args.items():
-        baseline_parser.add_argument(k, **v)
-        relatedness_parser.add_argument(k, **v)
-
-    baseline_parser.add_argument(
-        "--lang",
-        type=str,
-        required=True,
-        help="Language to train the model on",
-    )
-
-    baseline_parser.add_argument(
-        "--full",
-        action="store_true",
-        help="Perform a fine-tuning on the whole model",
-    )
-
-    relatedness_parser.add_argument(
-        "--train_languages",
-        type=str,
-        nargs="+",
-        required=True,
-        help="List of languages to train the model on",
-    )
-    relatedness_parser.add_argument(
-        "--test_languages",
-        type=str,
-        nargs="+",
-        required=True,
-        help="List of languages to evaluate the model on",
-    )
+        arg = k[2:]
+        if arg in baseline_args:
+            baseline_parser.add_argument(k, **v)
+        if arg in relatedness_args:
+            relatedness_parser.add_argument(k, **v)
+        if arg in evaluation_args:
+            evaluation_parser.add_argument(k, **v)
 
     args = parser.parse_args()
     if args.command == "baseline":
@@ -150,7 +198,10 @@ def run_cli():
 
     if fun := command_functions.get(args.command, None):
         conf = make_hyper(args)
-        fun(conf)
+        if args.command == "evaluate":
+            fun(conf, args.model_path)
+        else:
+            fun(conf)
 
         # Close W&B run if used
         if args.logger == "wandb":

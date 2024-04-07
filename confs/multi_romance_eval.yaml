@@ -1,0 +1,25 @@
+command:
+  - ${env}
+  - ${interpreter}
+  - -m
+  - nlp
+  - evaluate
+  - ${args}
+method: grid
+parameters:
+  test_languages:
+    values:
+      - fra
+      - ita
+      - spa
+  rank:
+    values:
+      - 8
+      - 4
+      - 16
+  train_languages:
+    values:
+      - multi_romance
+  logger:
+    values:
+      - wandb

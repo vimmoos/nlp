@@ -1,5 +1,7 @@
 black==24.2.0
-datasets==2.18.0
+evaluate==0.4.1
 peft==0.9.0
 pip-chill==1.0.3
+sacrebleu==2.4.1
 scipy==1.12.0
+wandb==0.16.4

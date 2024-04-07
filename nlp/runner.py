@@ -2,6 +2,7 @@ from nlp.hyper import HyperRelatedness
 from nlp import wrapper, data
 from peft import TaskType
 from pathlib import Path
+from typing import Optional, Union
 
 
 def make_wrapper(conf: HyperRelatedness):
@@ -52,6 +53,38 @@ def run_baseline(conf: HyperRelatedness):
     train_model(
         conf, wmodel, "BASELINE" if conf.with_peft else "FULL_BASELINE"
     )
+
+
+def evaluate_model(
+    conf: HyperRelatedness, model_path: Optional[Union[str, Path]]
+):
+    wmodel = make_wrapper(conf)
+    if model_path:
+        model_path = Path(model_path)
+    else:
+        name_suffix = f"BASELINE_{conf.r}"
+
+        model_path = Path("models") / wmodel.get_save_path(
+            conf.train_languages, name_suffix
+        )
+
+    wmodel.load_model_from_path(model_path)
+
+    datasets = {
+        lang: data.load_data(lang, wmodel.tokenizer)
+        for lang in conf.test_languages
+    }
+    train_langs = f"{'_'.join(conf.train_languages)}_{conf.r}"
+
+    for lang in conf.test_languages:
+        wmodel.evaluate(
+            datasets[lang]["test"],
+            log_prefix=f"test_{lang}_{train_langs}_zero_shot",
+            save_path=Path("results")
+            / wmodel.get_save_path(
+                conf.train_languages, f"{lang}{conf.r}_zero_shot"
+            ),
+        )
 
 
 def run_relatedness(conf: HyperRelatedness):
