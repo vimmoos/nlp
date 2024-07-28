@@ -1,4 +1,4 @@
-# NLP Project
+# NLP Project - Investigating LoRA for Cross-Lingual Adaptation in Word Inflection
 
 ## Installation
 
